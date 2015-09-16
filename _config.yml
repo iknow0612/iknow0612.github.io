@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
-simple_search: https://www.google.com/search
-description:
+url: http://iknow0612.github.io
+title: Outprog Blog
+subtitle: 开启新的篇章
+author: Xiongwei
+simple_search: https://www.baidu.com
+description: Outprog 博客 电子产品 自行车
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
