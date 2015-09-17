@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Outprog Blog]]></title>
-  <link href="http://iknow0612.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: 技术 | Outprog Blog]]></title>
+  <link href="http://iknow0612.github.io/blog/categories/ji-zhu/atom.xml" rel="self"/>
   <link href="http://iknow0612.github.io/"/>
   <updated>2015-09-18T00:31:02+08:00</updated>
   <id>http://iknow0612.github.io/</id>
@@ -79,13 +79,12 @@
 
 <p>使用 Chrome 浏览器的 “Inspect Element”－“Network” 可以很方便的查看到被墙掉的文件：</p>
 
-<p><img src="http://iknow0612.github.io/images/post/20150916/chrome_network_failed.png" alt="" /></p>
+<p><img src="/images/post/20150916/chrome_network_failed.png" alt="" /></p>
 
 <p>可以看出来，被墙文件的共同特点是路径名中都包含 googleapis.com, 很显然 googleapis.com 已经被墙掉，内网无法访问。现在要做的就是把这些墙掉的文件替换掉。回到 octopress 目录，使用如下命令查找文档中包含 &ldquo;googleapis.com&rdquo; 的文件：</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>find ./ -name "*" | xargs grep "googleapis.com"</span></code></pre></td></tr></table></div></figure>
-
+<pre><code>find ./ -name "*" | xargs grep "googleapis.com"
+</code></pre>
 
 <p>通过该命令，可以很方便的定位到文件夹中（包括子目录）哪些文档的内容包含某串字符。在这里，我们可以看到 public 和 source 文件夹中都有包含字符串 &ldquo;googleapis.com&rdquo; 的文件， public 中的文件是由 source 中的文件生成的，因此只需要更改 source 中的文件就可以。</p>
 
@@ -94,38 +93,25 @@
 <p><em>source/_includes/head.html</em>
 原文本</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;&lt;/script&gt;</span></code></pre></td></tr></table></div></figure>
+<p>```</p>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 
-<p>替换后的文本（替换为 baidu cdn)</p>
+<pre><code>替换后的文本（替换为 baidu cdn)
+</code></pre>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script src="//libs.baidu.com/jquery/1.9.1/jquery.min.js"&gt;&lt;/script&gt;</span></code></pre></td></tr></table></div></figure>
+<script src="//libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
 
 
-<p><em>source/_includes/custom/head.html</em></p>
+<p>```
+<em>source/_includes/custom/head.html</em></p>
 
 <p>这里我直接将所有内容注释掉了，当然你也可以翻 墙后把 google 提供的字体下载到 github 目录中，将此处的路径改为你的地址。</p>
 
 <p>重新生成并部署，就不会遇到这个问题了。</p>
 
 <p>ps: _config.yml 中 twitter 开启时也存在 twitter 需要翻墙连接的情况，把 twitter 关闭后可以解决。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[开启新的篇章]]></title>
-    <link href="http://iknow0612.github.io/blog/2015/09/16/kai-qi-xin-de-pian-zhang/"/>
-    <updated>2015-09-16T09:44:21+08:00</updated>
-    <id>http://iknow0612.github.io/blog/2015/09/16/kai-qi-xin-de-pian-zhang</id>
-    <content type="html"><![CDATA[<p>采用 Octopress 创建了这个 blog，发出第一篇帖子——'开启新的篇章'。</p>
-
-<p>最后一次写 blog 已经是好几年前的事了。那时用的 MSN Space，拉了一堆朋友一起来写日志，写感概。而今 MSN 已退出历史的舞台。</p>
-
-<p>现在重新开启 blog，是想给自己一个新的开始。工作两年过来，自己不像以前一样爱折腾了，轻松的工作也让心思有点懈怠，然而时间是不会等人的。有的人不知不觉就已年过三旬，有的人一直在等待，还有的人早就开始去做那些自己想做的事，远离那些消极与被动。所以，我觉得自己不能这样下去，更应该去做想做的事情。</p>
-
-<p>这个 blog 是一个开始，记录下生活中有趣的点滴，总结一下遇到的问题。</p>
 ]]></content>
   </entry>
   
