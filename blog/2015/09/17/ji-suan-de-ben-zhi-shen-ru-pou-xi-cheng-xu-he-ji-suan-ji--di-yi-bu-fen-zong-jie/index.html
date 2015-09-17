@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Outprog Blog</title>
+  <title>《计算的本质:深入剖析程序和计算机》第一部分总结 - Outprog Blog</title>
   <meta name="author" content="Xiongwei">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://iknow0612.github.io/">
+  <link rel="canonical" href="http://iknow0612.github.io/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Outprog Blog" type="application/atom+xml">
@@ -65,15 +65,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/">《计算的本质:深入剖析程序和计算机》第一部分总结</a></h1>
+      <h1 class="entry-title">《计算的本质:深入剖析程序和计算机》第一部分总结</h1>
     
     
       <p class="meta">
@@ -84,114 +81,92 @@
 
 <time class='entry-date' datetime='2015-09-17T23:58:48+08:00'><span class='date'>2015年-09月-17日</span> <span class='time'>11:58 pm</span></time>
         
-           | <a href="/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/#disqus_thread"
-             data-disqus-identifier="http://iknow0612.github.io/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/">Comments</a>
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://iknow0612.github.io">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>大学时对计算理论知之甚少，计算理论、编译原理都是为了应试而学，所用的课本也纯粹是乏味的理论，让人很难提起兴趣。而国外一些权威课本，可能知识总结不算精粹，讲解过程也掺杂着各种比喻，甚至是“过多”的讲述背景故事，但若是真的对这门学科感兴趣，这样的课本也许才是更好的选择。学习这样的课本，不仅仅能让人理解理论知识，更能了解这些理论知识的由来和意义。</p>
+<div class="entry-content"><p>大学时对计算理论知之甚少，计算理论、编译原理都是为了应试而学，所用的课本也纯粹是乏味的理论，让人很难提起兴趣。而国外一些权威课本，可能知识总结不算精粹，讲解过程也掺杂着各种比喻，甚至是“过多”的讲述背景故事，但若是真的对这门学科感兴趣，这样的课本也许才是更好的选择。学习这样的课本，不仅仅能让人理解理论知识，更能了解这些理论知识的由来和意义。</p>
 
 <p>好了，废话不多说。读完第一部分-程序和机器，稍作概述：</p>
 
+<!--more-->
+
+
+<ul>
+<li><p>图灵机：将一条无限长的纸带穿过黑盒子，黑盒子可以左右移动纸带并修改在黑盒子中那部分纸带上的内容（擦除原有内容，再写入新的内容），黑盒子内部可以存储某些状态。图灵机的运作步骤如下：</p>
+
+<ol>
+<li>黑盒子对纸带上的内容进行读取，读取的内容可能会改变黑盒子的内部状态</li>
+<li>黑盒子根据最新的内部状态，对纸带进行写入和移动</li>
+<li>当完成移动后，纸带原先的部分必定移出黑盒子，另外一部分会进入黑盒子，回到步骤1，黑盒子对新进入的纸带重复以上操作。</li>
+</ol>
+
+
+<p>图灵机是目前为止最全能的计算机器，只需要通过以上简单的原理，可以实现任何现代计算机的计算功能。图灵机在添加一些附加功能（比如存储、子例程、多条纸带）后，可以提升一定的便捷性，但是不不能提升自身的计算能力。<br/>
+存在一种通用图灵机（UTM，Universal Turing Machine），它可以在自身的纸带上模拟出任何一种图灵机，包括通用图灵机。通俗的说就是可以在图灵机上面模拟出一台虚拟的图灵机，这台虚拟的图灵机上还可以模拟出图灵机。</p></li>
+<li><p>确定性下推自动机</p></li>
+<li>非确定性下推自动机</li>
+<li>确定性有限自动机</li>
+<li>非确定性有限自动机</li>
+</ul>
+
+
+<p>认真去做一件事时，是需要某种信念的。</p>
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/">阅读全文 &rarr;</a>
-    </footer>
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/09/16/octopresschuang-jian-bo-ke/">使用Octopress创建博客, Google CDN被墙的解决办法</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-09-16T16:51:14+08:00'><span class='date'>2015年-09月-16日</span> <span class='time'>4:51 pm</span></time>
-        
-           | <a href="/blog/2015/09/16/octopresschuang-jian-bo-ke/#disqus_thread"
-             data-disqus-identifier="http://iknow0612.github.io/blog/2015/09/16/octopresschuang-jian-bo-ke/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>官方文档提供 Octopress 创建博客的基本步骤：<br/>
-<a href="http://octopress.org/docs/">http://octopress.org/docs/</a></p>
-
-<p>使用官方文档，创建过程还算比较顺利，很快就可以在 github 上运行起来，但是运行后，还是遇到了一个特别的问题：<br/>
-国内被墙后无法加载 google 提供的 jquery 文件和字体文件，导致 blog 打开速度超慢</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2015/09/16/octopresschuang-jian-bo-ke/">阅读全文 &rarr;</a>
-    </footer>
   
 
+<span class="byline author vcard">Posted by <span class="fn">Xiongwei</span></span>
 
-    </article>
-  
-  
-    <article>
       
-  <header>
+
+
+
+
+<time class='entry-date' datetime='2015-09-17T23:58:48+08:00'><span class='date'>2015年-09月-17日</span> <span class='time'>11:58 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/yue-du/'>阅读</a>
+  
+</span>
+
+
+    </p>
     
-      <h1 class="entry-title"><a href="/blog/2015/09/16/kai-qi-xin-de-pian-zhang/">开启新的篇章</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-09-16T09:44:21+08:00'><span class='date'>2015年-09月-16日</span> <span class='time'>9:44 am</span></time>
-        
-           | <a href="/blog/2015/09/16/kai-qi-xin-de-pian-zhang/#disqus_thread"
-             data-disqus-identifier="http://iknow0612.github.io/blog/2015/09/16/kai-qi-xin-de-pian-zhang/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>采用 Octopress 创建了这个 blog，发出第一篇帖子——'开启新的篇章'。</p>
-
-<p>最后一次写 blog 已经是好几年前的事了。那时用的 MSN Space，拉了一堆朋友一起来写日志，写感概。而今 MSN 已退出历史的舞台。</p>
-
-<p>现在重新开启 blog，是想给自己一个新的开始。工作两年过来，自己不像以前一样爱折腾了，轻松的工作也让心思有点懈怠，然而时间是不会等人的。有的人不知不觉就已年过三旬，有的人一直在等待，还有的人早就开始去做那些自己想做的事，远离那些消极与被动。所以，我觉得自己不能这样下去，更应该去做想做的事情。</p>
-
-<p>这个 blog 是一个开始，记录下生活中有趣的点滴，总结一下遇到的问题。</p>
+      <div class="sharing">
+  
+  
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/09/16/octopresschuang-jian-bo-ke/" title="Previous Post: 使用Octopress创建博客, Google CDN被墙的解决办法">&laquo; 使用Octopress创建博客, Google CDN被墙的解决办法</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
+  </section>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -220,6 +195,7 @@
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -234,7 +210,10 @@
       var disqus_shortname = 'outprog';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://iknow0612.github.io/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/';
+        var disqus_url = 'http://iknow0612.github.io/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

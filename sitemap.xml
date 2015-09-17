@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://iknow0612.github.io/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/</loc>
+    <lastmod>2015-09-17T23:58:48+08:00</lastmod>
+  </url>
+  <url>
     <loc>http://iknow0612.github.io/blog/2015/09/16/octopresschuang-jian-bo-ke/</loc>
     <lastmod>2015-09-16T16:51:14+08:00</lastmod>
   </url>
@@ -16,5 +20,8 @@
   </url>
   <url>
     <loc>http://iknow0612.github.io/blog/categories/octopress/</loc>
+  </url>
+  <url>
+    <loc>http://iknow0612.github.io/blog/categories/yue-du/</loc>
   </url>
 </urlset>
