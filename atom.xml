@@ -4,7 +4,7 @@
   <title><![CDATA[Outprog Blog]]></title>
   <link href="http://iknow0612.github.io/atom.xml" rel="self"/>
   <link href="http://iknow0612.github.io/"/>
-  <updated>2015-09-29T17:06:00+08:00</updated>
+  <updated>2015-09-29T17:19:59+08:00</updated>
   <id>http://iknow0612.github.io/</id>
   <author>
     <name><![CDATA[Xiongwei]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[关于写代码]]></title>
+    <link href="http://iknow0612.github.io/blog/2015/09/29/guan-yu-xie-dai-ma/"/>
+    <updated>2015-09-29T17:15:06+08:00</updated>
+    <id>http://iknow0612.github.io/blog/2015/09/29/guan-yu-xie-dai-ma</id>
+    <content type="html"><![CDATA[<p>对于写代码哪些事情，还有太多要去学习的东西。没有摸索过设计模式，没有重构过太多东西，优美的代码艺术更是谈不上，只是简单的写写而已。</p>
+
+<p>写过各种排序，写过树，写过神经网络，在算法的世界，一切都让人感到惊奇。去九度刷过题，废寝忘食，也去 Codewars 刷过 star，跻身排行榜。解决各种问题，获得各种成就，一切不为别的，就像是一个又一个游戏关卡，只为过关获取成就。</p>
+
+<p>写过 C，写过 C++，写过 PHP，写过 JAVA，写过 R，写过 Javascript，写过 Ruby，写过 shell，最近，还写写 Swift。C/C++ 纠结的指针，C++ 的继承、派生、多态、虚函数、运算符重载各种特性绕脑。写过 Ruby 后，才真是不想再写其他语言了，但是仍然避免不了用各种语言，历史上的架构原因，不同语言开发的优秀工具，都必须在特定语言环境下使用。然而各种语言，毕竟殊途同归。</p>
+
+<p>写代码，要么往上写，要么往下写。所谓往上写，就是去注重代码质量，注重抽象、设计和性能，注重一切工程上的问题；所谓往下写，就是去理解语言的魅力，理解语言的实现，理解语言和计算这门艺术。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[《计算的本质:深入剖析程序和计算机》第一部分总结]]></title>
