@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Ubuntu 14.04 使用 Cron 实现计划任务 - Outprog Blog</title>
+  <meta name="author" content="Xiongwei">
+
+  
+  <meta name="description" content="Windows 自带定时执行任务的工具叫做“计划任务”，Linux 下我们使用 Cron 实现这一功能。 启动 cron 服务 通常 ubuntu 下自带 cron，如果没有也可以通过以下命令进行安装： $ apt-get install cron 若已经安装，输入以下命令判断 cron &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://iknow0612.github.io/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/atom.xml" rel="alternate" title="Outprog Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<!--由于被墙,取消字体
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+-->
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Outprog Blog</a></h1>
+  
+    <h2>开启新的篇章</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.bing.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="iknow0612.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">博客</a></li>
+  <li><a href="/blog/archives">列表</a></li>
+  <li><a href="/about">关于</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Ubuntu 14.04 使用 Cron 实现计划任务</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-10-15T21:37:47+08:00'><span class='date'>2015年-10月-15日</span> <span class='time'>9:37 pm</span></time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://iknow0612.github.io">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><img src="/images/post/20151015/Timing.jpg" alt="" /></p>
+
+<p>Windows 自带定时执行任务的工具叫做“计划任务”，Linux 下我们使用 Cron 实现这一功能。</p>
+
+<!--more-->
+
+
+<h2>启动 cron 服务</h2>
+
+<p>通常 ubuntu 下自带 cron，如果没有也可以通过以下命令进行安装：</p>
+
+<pre><code>$ apt-get install cron
+</code></pre>
+
+<p>若已经安装，输入以下命令判断 cron 服务是否启动：</p>
+
+<pre><code>$ pgrep cron
+</code></pre>
+
+<p>如果有 pid （一串数字）输出则说明 cron 服务已经启动，没有任何输出说明需要手动启动 cron 服务。<br/>
+启动 cron 服务：</p>
+
+<pre><code>$ service cron start
+</code></pre>
+
+<h2>管理任务计划文件</h2>
+
+<p>cron 的所有任务计划都记录在 crontab 任务计划文件中，通过 crontab 命令对该任务文件进行管理。</p>
+
+<pre><code>usage: crontab [-u user] file
+       crontab [ -u user] [ -i ] { -e | -l | -r }
+               (default operation is replace, per 1003.2)
+       -e      (edit user's crontab)
+       -l      (list user's crontab)
+       -r      (delete user's crontab)
+       -i      (prompt before deleting user's crontab)
+</code></pre>
+
+<p>参数说明：</p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-u user</td>
+<td>指定用户</td>
+</tr>
+<tr>
+<td>-e</td>
+<td>编辑某个用户的计划任务文件，若不指定用户，默认编辑当前用户的计划任务文件</td>
+</tr>
+<tr>
+<td>-l</td>
+<td>显示某个用户的计划任务文件，若不指定用户，默认显示当前用户的计划任务文件</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>删除某个用户的计划任务文件，若不指定用户，默认删除当前用户的计划任务文件</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>在删除之前推送确认提示</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br>
+使用示例：</p>
+
+<pre><code>$ crontab -u foo -e     #编辑用户 foo 的计划任务文件
+
+$ crontab -e            #编辑当前用户的计划任务文件
+
+$ crontab -u foo -l     #显示用户 foo 的计划任务文件
+
+$ crontab -l            #显示当前用户的计划任务文件
+
+$ crontab -r            #删除当前用户的计划任务文件
+</code></pre>
+
+<h2>编辑任务计划文件</h2>
+
+<p>初次使用 crontab -e，可能需要选择编辑器，输入编辑器序号点击回车后进入计划任务文件编辑模式。若直接进入编辑模式忽略以上内容。</p>
+
+<p>进入编辑模式后，按照指定格式添加任务计划。</p>
+
+<p>任务计划的语法格式如下：</p>
+
+<pre><code>m h dom mon dow   command
+0-59 0-23 1-31 1-12 0-7  command
+</code></pre>
+
+<ul>
+<li>m: 表示分钟</li>
+<li>h: 表示小时</li>
+<li>dom: 表示日期</li>
+<li>mon: 表示月份</li>
+<li>dow: 表示星期</li>
+<li>command: 预执行的命令</li>
+</ul>
+
+
+<p>另外需要使用一些特殊符号实现灵活的配置：</p>
+
+<ul>
+<li>* 代表所有值</li>
+<li>/ 代表“每”</li>
+<li>- 代表范围</li>
+<li>, 分割数字</li>
+</ul>
+
+
+<p>任务示例如下：</p>
+
+<pre><code>## 指定具体执行时间
+2   *  *  *  * ls    #每个小时的第2分钟执行一次 ls 命令
+30  7  *  *  * ls    #每天7：30执行一次 ls 命令
+30 20  *  *  2 ls    #每周二，20：30执行一次 ls 命令（0和7表示星期天）
+
+## 指定间隔时间
+*/2 *  *  *  * ls    #每隔2分钟执行一次 ls 命令
+
+## 指定时间段
+30  7 3-6 *  * ls    #每个月的3，4，5，6号的7：30分各执行一次 ls 命令
+
+## 指定多个时间
+30  7 3,6 *  * ls    #每月的3号和6号的7：30分各执行一次 ls 命令 
+</code></pre>
+
+<p>按照指定格式添加任务，保存后，任务生效。</p>
+
+<p>下面是一个实际的计划任务文件，包含系统自带注释和一个每两分钟执行一次输出字符串 ”Hello World“ 到 home 目录下 cron_test 文件的计划任务。</p>
+
+<pre><code># Edit this file to introduce tasks to be run by cron. 
+# 
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+# 
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').# 
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+# 
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+# 
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+*/2 * * * * echo "Hello World" &gt;&gt; /home/cron_test                                                          
+</code></pre>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Xiongwei</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2015-10-15T21:37:47+08:00'><span class='date'>2015年-10月-15日</span> <span class='time'>9:37 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/cron/'>cron</a>, <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/ji-zhu/'>技术</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/10/13/mac-keyboard-shortcuts/" title="Previous Post: Mac 快捷键">&laquo; Mac 快捷键</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>最近发布</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu/">Ubuntu 14.04 使用 Cron 实现计划任务</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/10/13/mac-keyboard-shortcuts/">Mac 快捷键</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/10/09/du-jiao-shou-gao-da/">全装独角兽高达</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/09/29/guan-yu-xie-dai-ma/">关于写代码</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/">《计算的本质:深入剖析程序和计算机》第一部分总结</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Xiongwei -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'outprog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://iknow0612.github.io/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu/';
+        var disqus_url = 'http://iknow0612.github.io/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
