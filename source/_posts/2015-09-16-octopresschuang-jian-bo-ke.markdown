@@ -3,7 +3,7 @@ layout: post
 title: "使用Octopress创建博客, Google CDN被墙的解决办法"
 date: 2015-09-16 16:51:14 +0800
 comments: true
-categories: octopress
+categories: [octopress, 技术]
 ---
 
 
@@ -12,6 +12,7 @@ categories: octopress
 
 使用官方文档，创建过程还算比较顺利，很快就可以在 github 上运行起来，但是运行后，还是遇到了一个特别的问题：  
 国内被墙后无法加载 google 提供的 jquery 文件和字体文件，导致 blog 打开速度超慢  
+<!--more-->
 
 ## Google 被墙，无法加载指定 jquery 和字体
 由于天朝无所不能的墙的存在，我们甚至上个 blog 都得“翻一翻”，对我们技术人员“翻一翻”到是好说，可是很多普通老百姓还是很难实现“翻一翻”的。所以，我们的 blog 是需要避免这种尴尬的情形的。  
