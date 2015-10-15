@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cron | Outprog Blog]]></title>
   <link href="http://iknow0612.github.io/blog/categories/cron/atom.xml" rel="self"/>
   <link href="http://iknow0612.github.io/"/>
-  <updated>2015-10-16T00:12:12+08:00</updated>
+  <updated>2015-10-16T00:15:27+08:00</updated>
   <id>http://iknow0612.github.io/</id>
   <author>
     <name><![CDATA[Xiongwei]]></name>
@@ -153,7 +153,7 @@ $ crontab -r            #删除当前用户的计划任务文件
 30  7 3,6 *  * ls    #每月的3号和6号的7：30分各执行一次 ls 命令 
 </code></pre>
 
-<p>另外，使用 run-parts 可以允许指定目录下所有的脚本（注意脚本必须加上 &ldquo;#!/bin/bash"，否则 run-parts 会调用失败）.</p>
+<p>另外，使用 run-parts 可以运行指定目录下所有的脚本（注意脚本必须加上 &ldquo;#!/bin/bash"，否则 run-parts 会调用失败）.</p>
 
 <pre><code>30 7 * * * run-parts /home   #每天7：30运行 /home 目录下的所有脚本
 </code></pre>
