@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ssh | Outprog Blog]]></title>
+  <link href="http://iknow0612.github.io/blog/categories/ssh/atom.xml" rel="self"/>
+  <link href="http://iknow0612.github.io/"/>
+  <updated>2015-10-17T12:15:32+08:00</updated>
+  <id>http://iknow0612.github.io/</id>
+  <author>
+    <name><![CDATA[Xiongwei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[解决 Mac OS X 上使用 SSH 出现 Perl Warning: Setting Local Failed 的问题]]></title>
+    <link href="http://iknow0612.github.io/blog/2015/10/17/jie-jue-mac-os-x-shang-shi-yong-ssh-chu-xian-perl-warning-setting-local-failed-de-wen-ti/"/>
+    <updated>2015-10-17T12:01:56+08:00</updated>
+    <id>http://iknow0612.github.io/blog/2015/10/17/jie-jue-mac-os-x-shang-shi-yong-ssh-chu-xian-perl-warning-setting-local-failed-de-wen-ti</id>
+    <content type="html"><![CDATA[<p>在 Mac 上使用 SSH 连接远程服务器，运行 mongo 会出现报错：</p>
+
+<pre><code>Failed global initialization: BadValue Invalid or no user locale set. Please ensure LANG and/or LC_* environment variables are set correctly.
+</code></pre>
+
+<p>运行 mysql、psql 或者其他一些程序也可能出现如下警告：</p>
+
+<pre><code>perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+    LANGUAGE = (unset),
+    LC_ALL = (unset),
+    LC_CTYPE = "UTF-8",
+    LANG = "en_US.UTF-8"
+are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+</code></pre>
+
+<!--more-->
+
+
+<p>这是因为 Mac OS X 使用 SSH 连接远程服务器的时候缺少两个变量，解决办法是在 Mac OS X 本机的 ~/.bash_profit 文件中添加下面两行代码：</p>
+
+<pre><code>export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+</code></pre>
+
+<p>重启终端（Terminal）后可以解决该问题。</p>
+]]></content>
+  </entry>
+  
+</feed>

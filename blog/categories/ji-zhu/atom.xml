@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 技术 | Outprog Blog]]></title>
   <link href="http://iknow0612.github.io/blog/categories/ji-zhu/atom.xml" rel="self"/>
   <link href="http://iknow0612.github.io/"/>
-  <updated>2015-10-16T00:15:27+08:00</updated>
+  <updated>2015-10-17T12:15:32+08:00</updated>
   <id>http://iknow0612.github.io/</id>
   <author>
     <name><![CDATA[Xiongwei]]></name>
@@ -12,6 +12,41 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[解决 Mac OS X 上使用 SSH 出现 Perl Warning: Setting Local Failed 的问题]]></title>
+    <link href="http://iknow0612.github.io/blog/2015/10/17/jie-jue-mac-os-x-shang-shi-yong-ssh-chu-xian-perl-warning-setting-local-failed-de-wen-ti/"/>
+    <updated>2015-10-17T12:01:56+08:00</updated>
+    <id>http://iknow0612.github.io/blog/2015/10/17/jie-jue-mac-os-x-shang-shi-yong-ssh-chu-xian-perl-warning-setting-local-failed-de-wen-ti</id>
+    <content type="html"><![CDATA[<p>在 Mac 上使用 SSH 连接远程服务器，运行 mongo 会出现报错：</p>
+
+<pre><code>Failed global initialization: BadValue Invalid or no user locale set. Please ensure LANG and/or LC_* environment variables are set correctly.
+</code></pre>
+
+<p>运行 mysql、psql 或者其他一些程序也可能出现如下警告：</p>
+
+<pre><code>perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+    LANGUAGE = (unset),
+    LC_ALL = (unset),
+    LC_CTYPE = "UTF-8",
+    LANG = "en_US.UTF-8"
+are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+</code></pre>
+
+<!--more-->
+
+
+<p>这是因为 Mac OS X 使用 SSH 连接远程服务器的时候缺少两个变量，解决办法是在 Mac OS X 本机的 ~/.bash_profit 文件中添加下面两行代码：</p>
+
+<pre><code>export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+</code></pre>
+
+<p>重启终端（Terminal）后可以解决该问题。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ubuntu 14.04 使用 Cron 实现计划任务]]></title>
@@ -969,63 +1004,6 @@ $ crontab -r            #删除当前用户的计划任务文件
 <p>作为一名 WEB 开发人员，可能研究这些理论并没有多大的作用。现代高级编程技术让我们不需要任何底层理论就能写出出色的程序，但是求知欲不会停止，想去探索就应该去探索。有句话说得好——如果你想从头开始制作苹果派，必须先创造整个宇宙。</p>
 
 <p>认真去做一件事时，是需要某种信念的。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[使用Octopress创建博客, Google CDN被墙的解决办法]]></title>
-    <link href="http://iknow0612.github.io/blog/2015/09/16/octopresschuang-jian-bo-ke/"/>
-    <updated>2015-09-16T16:51:14+08:00</updated>
-    <id>http://iknow0612.github.io/blog/2015/09/16/octopresschuang-jian-bo-ke</id>
-    <content type="html"><![CDATA[<p>官方文档提供 Octopress 创建博客的基本步骤：<br/>
-<a href="http://octopress.org/docs/">http://octopress.org/docs/</a></p>
-
-<p>使用官方文档，创建过程还算比较顺利，很快就可以在 github 上运行起来，但是运行后，还是遇到了一个特别的问题：<br/>
-国内被墙后无法加载 google 提供的 jquery 文件和字体文件，导致 blog 打开速度超慢</p>
-
-<!--more-->
-
-
-<h2>Google 被墙，无法加载指定 jquery 和字体</h2>
-
-<p>由于天朝无所不能的墙的存在，我们甚至上个 blog 都得“翻一翻”，对我们技术人员“翻一翻”到是好说，可是很多普通老百姓还是很难实现“翻一翻”的。所以，我们的 blog 是需要避免这种尴尬的情形的。<br/>
-当然，不仅仅是 blog，我们在使用一些国外优秀的前端页面时，也会遇到这种尴尬的情形。如果你发现你的页面需要很长的时间才能打开，那可能就是遇到了这个问题。</p>
-
-<p>使用 Chrome 浏览器的 “Inspect Element”－“Network” 可以很方便的查看到被墙掉的文件：</p>
-
-<p><img src="/images/post/20150916/chrome_network_failed.png" alt="" /></p>
-
-<p>可以看出来，被墙文件的共同特点是路径名中都包含 googleapis.com, 很显然 googleapis.com 已经被墙掉，内网无法访问。现在要做的就是把这些墙掉的文件替换掉。回到 octopress 目录，使用如下命令查找文档中包含 &ldquo;googleapis.com&rdquo; 的文件：</p>
-
-<pre><code>find ./ -name "*" | xargs grep "googleapis.com"
-</code></pre>
-
-<p>通过该命令，可以很方便的定位到文件夹中（包括子目录）哪些文档的内容包含某串字符。在这里，我们可以看到 public 和 source 文件夹中都有包含字符串 &ldquo;googleapis.com&rdquo; 的文件， public 中的文件是由 source 中的文件生成的，因此只需要更改 source 中的文件就可以。</p>
-
-<p>这里我们只需要更改两个文件</p>
-
-<p><em>source/_includes/head.html</em>
-原文本</p>
-
-<p>```</p>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-
-<pre><code>替换后的文本（替换为 baidu cdn)
-</code></pre>
-
-<script src="//libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
-
-
-<p>```
-<em>source/_includes/custom/head.html</em></p>
-
-<p>这里我直接将所有内容注释掉了，当然你也可以翻 墙后把 google 提供的字体下载到 github 目录中，将此处的路径改为你的地址。</p>
-
-<p>重新生成并部署，就不会遇到这个问题了。</p>
-
-<p>ps: _config.yml 中 twitter 开启时也存在 twitter 需要翻墙连接的情况，把 twitter 关闭后可以解决。</p>
 ]]></content>
   </entry>
   
