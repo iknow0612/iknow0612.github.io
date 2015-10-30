@@ -4,7 +4,7 @@
   <title><![CDATA[Outprog Blog]]></title>
   <link href="http://iknow0612.github.io/atom.xml" rel="self"/>
   <link href="http://iknow0612.github.io/"/>
-  <updated>2015-10-17T12:24:04+08:00</updated>
+  <updated>2015-10-30T21:10:38+08:00</updated>
   <id>http://iknow0612.github.io/</id>
   <author>
     <name><![CDATA[Xiongwei]]></name>
@@ -53,7 +53,7 @@ export LC_ALL=en_US.UTF-8
     <link href="http://iknow0612.github.io/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu/"/>
     <updated>2015-10-15T21:37:47+08:00</updated>
     <id>http://iknow0612.github.io/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu</id>
-    <content type="html"><![CDATA[<p><img src="http://iknow0612.github.io/images/post/20151015/Timing.jpg" alt="" /></p>
+    <content type="html"><![CDATA[<p><img class="img-responsive" src="http://iknow0612.github.io/images/post/20151015/Timing.jpg"></p>
 
 <p>Windows 自带定时执行任务的工具叫做“计划任务”，Linux 下我们使用 Cron 实现这一功能。</p>
 
@@ -938,18 +938,18 @@ $ crontab -r            #删除当前用户的计划任务文件
 
 <p>全装独角兽，顾名思义就是包含所有装备的独角兽高达。我组的这套是 MG 级别的独角兽，机体分为两种模式，一种独角兽模式（纯白），一种高达模式（露出绿色的精神感应框架，又称为爆甲）。组装完成后机体可以任意变换两种模式。</p>
 
-<p><img src="http://iknow0612.github.io/images/post/20151009/u-2.jpg" alt="" /></p>
+<p><img class="img-responsive" src="http://iknow0612.github.io/images/post/20151009/u-2.jpg"></p>
 
 <p>左边为独角兽模式，右边为爆甲模式。下面再上几张图：</p>
 
 <!--more-->
 
 
-<p><img src="http://iknow0612.github.io/images/post/20151009/u-0.jpg" alt="" /></p>
+<p><img class="img-responsive" src="http://iknow0612.github.io/images/post/20151009/u-0.jpg"></p>
 
-<p><img src="http://iknow0612.github.io/images/post/20151009/u-1.jpg" alt="" /></p>
+<p><img class="img-responsive" src="http://iknow0612.github.io/images/post/20151009/u-1.jpg"></p>
 
-<p><img src="http://iknow0612.github.io/images/post/20151009/u-3.jpg" alt="" /></p>
+<p><img class="img-responsive" src="http://iknow0612.github.io/images/post/20151009/u-3.jpg"></p>
 
 <h3>高达模型的一些基本词汇：</h3>
 
@@ -1036,7 +1036,7 @@ $ crontab -r            #删除当前用户的计划任务文件
 3. 当完成移动后，纸带原先的部分必定移出黑盒子，另外一部分会进入黑盒子，回到步骤1，黑盒子对新进入的纸带重复以上操作。
 </code></pre>
 
-<p><img src="http://iknow0612.github.io/images/post/20150917/turing-machine.jpg" alt="" /></p>
+<p><img class="img-responsive" src="http://iknow0612.github.io/images/post/20150917/turing-machine.jpg"></p>
 
 <p>图灵机是目前为止最全能的计算机器，只需要通过以上简单的原理，可以实现任何现代计算机的计算功能。图灵机在添加一些附加功能（比如存储、子例程、多条纸带）后，可以提升一定的便捷性，但是不不能提升自身的计算能力。</p>
 
@@ -1073,7 +1073,7 @@ $ crontab -r            #删除当前用户的计划任务文件
 
 <p>使用 Chrome 浏览器的 “Inspect Element”－“Network” 可以很方便的查看到被墙掉的文件：</p>
 
-<p><img src="http://iknow0612.github.io/images/post/20150916/chrome_network_failed.png" alt="" /></p>
+<p><img class="img-responsive" src="http://iknow0612.github.io/images/post/20150916/chrome_network_failed.png"></p>
 
 <p>可以看出来，被墙文件的共同特点是路径名中都包含 googleapis.com, 很显然 googleapis.com 已经被墙掉，内网无法访问。现在要做的就是把这些墙掉的文件替换掉。回到 octopress 目录，使用如下命令查找文档中包含 &ldquo;googleapis.com&rdquo; 的文件：</p>
 

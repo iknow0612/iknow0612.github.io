@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Outprog Blog]]></title>
   <link href="http://iknow0612.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://iknow0612.github.io/"/>
-  <updated>2015-10-17T12:24:04+08:00</updated>
+  <updated>2015-10-30T21:10:38+08:00</updated>
   <id>http://iknow0612.github.io/</id>
   <author>
     <name><![CDATA[Xiongwei]]></name>
@@ -34,7 +34,7 @@
 
 <p>使用 Chrome 浏览器的 “Inspect Element”－“Network” 可以很方便的查看到被墙掉的文件：</p>
 
-<p><img src="/images/post/20150916/chrome_network_failed.png" alt="" /></p>
+<p><img class="img-responsive" src="/images/post/20150916/chrome_network_failed.png"></p>
 
 <p>可以看出来，被墙文件的共同特点是路径名中都包含 googleapis.com, 很显然 googleapis.com 已经被墙掉，内网无法访问。现在要做的就是把这些墙掉的文件替换掉。回到 octopress 目录，使用如下命令查找文档中包含 &ldquo;googleapis.com&rdquo; 的文件：</p>
 

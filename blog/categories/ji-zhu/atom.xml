@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 技术 | Outprog Blog]]></title>
   <link href="http://iknow0612.github.io/blog/categories/ji-zhu/atom.xml" rel="self"/>
   <link href="http://iknow0612.github.io/"/>
-  <updated>2015-10-17T12:24:04+08:00</updated>
+  <updated>2015-10-30T21:10:38+08:00</updated>
   <id>http://iknow0612.github.io/</id>
   <author>
     <name><![CDATA[Xiongwei]]></name>
@@ -53,7 +53,7 @@ export LC_ALL=en_US.UTF-8
     <link href="http://iknow0612.github.io/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu/"/>
     <updated>2015-10-15T21:37:47+08:00</updated>
     <id>http://iknow0612.github.io/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu</id>
-    <content type="html"><![CDATA[<p><img src="/images/post/20151015/Timing.jpg" alt="" /></p>
+    <content type="html"><![CDATA[<p><img class="img-responsive" src="/images/post/20151015/Timing.jpg"></p>
 
 <p>Windows 自带定时执行任务的工具叫做“计划任务”，Linux 下我们使用 Cron 实现这一功能。</p>
 
@@ -991,7 +991,7 @@ $ crontab -r            #删除当前用户的计划任务文件
 3. 当完成移动后，纸带原先的部分必定移出黑盒子，另外一部分会进入黑盒子，回到步骤1，黑盒子对新进入的纸带重复以上操作。
 </code></pre>
 
-<p><img src="/images/post/20150917/turing-machine.jpg" alt="" /></p>
+<p><img class="img-responsive" src="/images/post/20150917/turing-machine.jpg"></p>
 
 <p>图灵机是目前为止最全能的计算机器，只需要通过以上简单的原理，可以实现任何现代计算机的计算功能。图灵机在添加一些附加功能（比如存储、子例程、多条纸带）后，可以提升一定的便捷性，但是不不能提升自身的计算能力。</p>
 

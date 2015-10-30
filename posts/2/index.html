@@ -1,15 +1,13 @@
-
+<!---->
 <!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<html>
 <head>
   <meta charset="utf-8">
   <title>Outprog Blog</title>
   <meta name="author" content="Xiongwei">
 
   
-  <meta name="description" content="大学时对计算理论知之甚少，计算理论、编译原理都是为了应试而学，所用的课本也纯粹是乏味的理论，让人很难提起兴趣。而国外一些权威课本，可能知识总结不算精粹，讲解过程也掺杂着各种比喻，甚至是“过多”的讲述背景故事，但若是真的对这门学科感兴趣，这样的课本也许才是更好的选择。学习这样的课本， &hellip;">
+  <meta name="description" content="开启新的篇章 Outprog Blog 更多 Blog 2015年-09月-17日 11:58 pm | Comments 《计算的本质:深入剖析程序和计算机》第一部分总结 大学时对计算理论知之甚少，计算理论、编译原理都是为了应试而学，所用的课本也纯粹是乏味的理论，让人很难提起兴趣。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,31 +18,60 @@
   
   <link rel="canonical" href="http://iknow0612.github.io/posts/2/">
   <link href="/favicon.png" rel="icon">
+  <!--
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Outprog Blog" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/libs/jquery.min.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<!--由于被墙,取消字体
-<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
--->
-
-  
+  -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,400italic,600,300italic,300|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<!-- Bootstrap -->
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/owl.carousel.css" rel="stylesheet">
+<link href="/css/owl.theme.css" rel="stylesheet">
+<link href="/css/owl.transitions.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
 
 </head>
 
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Outprog Blog</a></h1>
-  
-    <h2>开启新的篇章</h2>
-  
-</hgroup>
-
+<body data-spy="scroll" data-target=".main-nav">
+    <header class="st-navbar">
+    <nav class="navbar navbar-default navbar-fixed-top clearfix" role="navigation">
+        <div class="container"><!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sept-main-nav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="">
+                    <img src="/images/logo-outprog.png" alt="" class="img-responsive"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse main-nav" id="sept-main-nav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">主页</a></li>
+                    <li><a href="/blog/archives">列表</a></li>
+                    <li><a href="/about">关于</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
 </header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+
+
+
+    <!--
+<ul class="subscription" data-subscription="rss">
   <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   
 </ul>
@@ -56,123 +83,153 @@
   </fieldset>
 </form>
   
-<ul class="main-navigation">
-  <li><a href="/">博客</a></li>
-  <li><a href="/blog/archives">列表</a></li>
-  <li><a href="/about">关于</a></li>
-</ul>
+-->
+<section class="home" id="home" data-stellar-background-ratio="0.4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="st-home-unit">
+                    <div class="hero-txt">
+                        
+                            <p class="hero-sub-title hero-work">开启新的篇章</p>
+                        
+                        <h2 class="hero-title">Outprog Blog</h2>
+                        <a href="#blog" class="btn btn-main btn-lg">更多</a>
+                    </div>
 
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/">《计算的本质:深入剖析程序和计算机》第一部分总结</a></h1>
-    
-    
-      <p class="meta">
-        
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mouse-icon"><div class="wheel"></div></div>
+</section>
+
+
+
+<section class="blog" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title st-center">
+                    <h3>Blog</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                
+                
+                
+                <div class="blog-post">
+                  
+    <div class="post-meta">
+        <span>
+            
 
 
 
 
 <time class='entry-date' datetime='2015-09-17T23:58:48+08:00'><span class='date'>2015年-09月-17日</span> <span class='time'>11:58 pm</span></time>
+        </span>
         
-           | <a href="/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/#disqus_thread"
-             data-disqus-identifier="http://iknow0612.github.io/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/">Comments</a>
+            <span>
+               | <a href="/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/#disqus_thread"
+                 data-disqus-identifier="http://iknow0612.github.io/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/">Comments</a>
+            </span>
         
-      </p>
+    </div>
     
-  </header>
+        <h1 class="post-title"><a href="/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/">《计算的本质:深入剖析程序和计算机》第一部分总结</a></h1>
+    
+    
+    
 
 
-  <div class="entry-content"><p>大学时对计算理论知之甚少，计算理论、编译原理都是为了应试而学，所用的课本也纯粹是乏味的理论，让人很难提起兴趣。而国外一些权威课本，可能知识总结不算精粹，讲解过程也掺杂着各种比喻，甚至是“过多”的讲述背景故事，但若是真的对这门学科感兴趣，这样的课本也许才是更好的选择。学习这样的课本，不仅仅能让人理解理论知识，更能了解这些理论知识的由来和意义。</p>
+    <div class="post-content"><p>大学时对计算理论知之甚少，计算理论、编译原理都是为了应试而学，所用的课本也纯粹是乏味的理论，让人很难提起兴趣。而国外一些权威课本，可能知识总结不算精粹，讲解过程也掺杂着各种比喻，甚至是“过多”的讲述背景故事，但若是真的对这门学科感兴趣，这样的课本也许才是更好的选择。学习这样的课本，不仅仅能让人理解理论知识，更能了解这些理论知识的由来和意义。</p>
 
 <p>好了，废话不多说。读完第一部分-程序和机器，稍作概述：</p>
 
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/">阅读全文 &rarr;</a>
-    </footer>
-  
+    
+    
+        <footer>
+            <a rel="full-article" href="/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/">阅读全文 &rarr;</a>
+        </footer>
+    
 
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/09/16/octopresschuang-jian-bo-ke/">使用Octopress创建博客, Google CDN被墙的解决办法</a></h1>
-    
-    
-      <p class="meta">
-        
+                </div>
+                
+                
+                <div class="blog-post">
+                  
+    <div class="post-meta">
+        <span>
+            
 
 
 
 
 <time class='entry-date' datetime='2015-09-16T16:51:14+08:00'><span class='date'>2015年-09月-16日</span> <span class='time'>4:51 pm</span></time>
+        </span>
         
-           | <a href="/blog/2015/09/16/octopresschuang-jian-bo-ke/#disqus_thread"
-             data-disqus-identifier="http://iknow0612.github.io/blog/2015/09/16/octopresschuang-jian-bo-ke/">Comments</a>
+            <span>
+               | <a href="/blog/2015/09/16/octopresschuang-jian-bo-ke/#disqus_thread"
+                 data-disqus-identifier="http://iknow0612.github.io/blog/2015/09/16/octopresschuang-jian-bo-ke/">Comments</a>
+            </span>
         
-      </p>
+    </div>
     
-  </header>
+        <h1 class="post-title"><a href="/blog/2015/09/16/octopresschuang-jian-bo-ke/">使用Octopress创建博客, Google CDN被墙的解决办法</a></h1>
+    
+    
+    
 
 
-  <div class="entry-content"><p>官方文档提供 Octopress 创建博客的基本步骤：<br/>
+    <div class="post-content"><p>官方文档提供 Octopress 创建博客的基本步骤：<br/>
 <a href="http://octopress.org/docs/">http://octopress.org/docs/</a></p>
 
 <p>使用官方文档，创建过程还算比较顺利，很快就可以在 github 上运行起来，但是运行后，还是遇到了一个特别的问题：<br/>
 国内被墙后无法加载 google 提供的 jquery 文件和字体文件，导致 blog 打开速度超慢</p>
 
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2015/09/16/octopresschuang-jian-bo-ke/">阅读全文 &rarr;</a>
-    </footer>
-  
+    
+    
+        <footer>
+            <a rel="full-article" href="/blog/2015/09/16/octopresschuang-jian-bo-ke/">阅读全文 &rarr;</a>
+        </footer>
+    
 
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/09/16/kai-qi-xin-de-pian-zhang/">开启新的篇章</a></h1>
-    
-    
-      <p class="meta">
-        
+                </div>
+                
+                
+                <div class="blog-post">
+                  
+    <div class="post-meta">
+        <span>
+            
 
 
 
 
 <time class='entry-date' datetime='2015-09-16T09:44:21+08:00'><span class='date'>2015年-09月-16日</span> <span class='time'>9:44 am</span></time>
+        </span>
         
-           | <a href="/blog/2015/09/16/kai-qi-xin-de-pian-zhang/#disqus_thread"
-             data-disqus-identifier="http://iknow0612.github.io/blog/2015/09/16/kai-qi-xin-de-pian-zhang/">Comments</a>
+            <span>
+               | <a href="/blog/2015/09/16/kai-qi-xin-de-pian-zhang/#disqus_thread"
+                 data-disqus-identifier="http://iknow0612.github.io/blog/2015/09/16/kai-qi-xin-de-pian-zhang/">Comments</a>
+            </span>
         
-      </p>
+    </div>
     
-  </header>
+        <h1 class="post-title"><a href="/blog/2015/09/16/kai-qi-xin-de-pian-zhang/">开启新的篇章</a></h1>
+    
+    
+    
 
 
-  <div class="entry-content"><p>采用 Octopress 创建了这个 blog，发出第一篇帖子——'开启新的篇章'。</p>
+    <div class="post-content"><p>采用 Octopress 创建了这个 blog，发出第一篇帖子——'开启新的篇章'。</p>
 
 <p>最后一次写 blog 已经是好几年前的事了。那时用的 MSN Space，拉了一堆朋友一起来写日志，写感概。而今 MSN 已退出历史的舞台。</p>
 
@@ -180,65 +237,88 @@
 
 <p>这个 blog 是一个开始，记录下生活中有趣的点滴，总结一下遇到的问题。</p>
 </div>
-  
-  
+    
+    
 
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-    <a class="next" href="/index.html">Newer &rarr;</a>
-    
-  </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                        
+                            <div class="pull-right"><a class="next" href="/index.html#blog">下一页 &rarr;</a></div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="widget">
+    <h2 class="widget-title">最近发表<h2>
+    <ul>
+        
+            <li>
+                <div class="recent-post clearfix">
+                    <h2 class="post-title">
+                        <a href="/blog/2015/10/17/jie-jue-mac-os-x-shang-shi-yong-ssh-chu-xian-perl-warning-setting-local-failed-de-wen-ti/">解决 Mac OS X 上使用 SSH 出现 Perl Warning: Setting Local Failed 的问题</a>
+                    </h2>
+                </div>
+            </li>
+        
+            <li>
+                <div class="recent-post clearfix">
+                    <h2 class="post-title">
+                        <a href="/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu/">Ubuntu 14.04 使用 Cron 实现计划任务</a>
+                    </h2>
+                </div>
+            </li>
+        
+            <li>
+                <div class="recent-post clearfix">
+                    <h2 class="post-title">
+                        <a href="/blog/2015/10/13/mac-keyboard-shortcuts/">Mac 快捷键</a>
+                    </h2>
+                </div>
+            </li>
+        
+            <li>
+                <div class="recent-post clearfix">
+                    <h2 class="post-title">
+                        <a href="/blog/2015/10/09/du-jiao-shou-gao-da/">全装独角兽高达</a>
+                    </h2>
+                </div>
+            </li>
+        
+            <li>
+                <div class="recent-post clearfix">
+                    <h2 class="post-title">
+                        <a href="/blog/2015/09/29/guan-yu-xie-dai-ma/">关于写代码</a>
+                    </h2>
+                </div>
+            </li>
+        
+    </ul>
 </div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2015/10/17/jie-jue-mac-os-x-shang-shi-yong-ssh-chu-xian-perl-warning-setting-local-failed-de-wen-ti/">解决 Mac OS X 上使用 SSH 出现 Perl Warning: Setting Local Failed 的问题</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu/">Ubuntu 14.04 使用 Cron 实现计划任务</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/10/13/mac-keyboard-shortcuts/">Mac 快捷键</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/10/09/du-jiao-shou-gao-da/">全装独角兽高达</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/09/29/guan-yu-xie-dai-ma/">关于写代码</a>
-      </li>
-    
-  </ul>
+
+
+            </div>
+        </div>
+    </div>
 </section>
 
 
 
-
-
-  
-</aside>
-
+    <footer class="site-footer"><div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            Copyright &copy; 2015 - Xiongwei -
+            <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+        </div>
     </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2015 - Xiongwei -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
+</div>
 
 </footer>
-  
+    
 
 <script type="text/javascript">
       var disqus_shortname = 'outprog';
@@ -255,12 +335,20 @@
 
 
 
-
-
-
-
-
-
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.easing.min.js"></script>
+<script src="/js/jquery.stellar.js"></script>
+<script src="/js/jquery.appear.js"></script>
+<script src="/js/jquery.nicescroll.min.js"></script>
+<script src="/js/jquery.countTo.js"></script>
+<script src="/js/jquery.shuffle.modernizr.js"></script>
+<script src="/js/jquery.shuffle.js"></script>
+<script src="/js/owl.carousel.js"></script>
+<script src="/js/jquery.ajaxchimp.min.js"></script>
+<script src="/js/script.js"></script>
 
 
 </body>
