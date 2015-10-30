@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: 图书 | Outprog Blog]]></title>
-  <link href="http://iknow0612.github.io/blog/categories/tu-shu/atom.xml" rel="self"/>
-  <link href="http://iknow0612.github.io/"/>
-  <updated>2015-10-30T21:10:38+08:00</updated>
-  <id>http://iknow0612.github.io/</id>
+  <link href="http://outporg.github.io/blog/categories/tu-shu/atom.xml" rel="self"/>
+  <link href="http://outporg.github.io/"/>
+  <updated>2015-10-31T00:24:25+08:00</updated>
+  <id>http://outporg.github.io/</id>
   <author>
     <name><![CDATA[Xiongwei]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[《计算的本质:深入剖析程序和计算机》第一部分总结]]></title>
-    <link href="http://iknow0612.github.io/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/"/>
+    <link href="http://outporg.github.io/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/"/>
     <updated>2015-09-17T23:58:48+08:00</updated>
-    <id>http://iknow0612.github.io/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie</id>
+    <id>http://outporg.github.io/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie</id>
     <content type="html"><![CDATA[<p>大学时对计算理论知之甚少，计算理论、编译原理都是为了应试而学，所用的课本也纯粹是乏味的理论，让人很难提起兴趣。而国外一些权威课本，可能知识总结不算精粹，讲解过程也掺杂着各种比喻，甚至是“过多”的讲述背景故事，但若是真的对这门学科感兴趣，这样的课本也许才是更好的选择。学习这样的课本，不仅仅能让人理解理论知识，更能了解这些理论知识的由来和意义。</p>
 
 <p>好了，废话不多说。读完第一部分-程序和机器，稍作概述：</p>

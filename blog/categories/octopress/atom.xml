@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Octopress | Outprog Blog]]></title>
-  <link href="http://iknow0612.github.io/blog/categories/octopress/atom.xml" rel="self"/>
-  <link href="http://iknow0612.github.io/"/>
-  <updated>2015-10-30T21:10:38+08:00</updated>
-  <id>http://iknow0612.github.io/</id>
+  <link href="http://outporg.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://outporg.github.io/"/>
+  <updated>2015-10-31T00:24:25+08:00</updated>
+  <id>http://outporg.github.io/</id>
   <author>
     <name><![CDATA[Xiongwei]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[使用Octopress创建博客, Google CDN被墙的解决办法]]></title>
-    <link href="http://iknow0612.github.io/blog/2015/09/16/octopresschuang-jian-bo-ke/"/>
+    <link href="http://outporg.github.io/blog/2015/09/16/octopresschuang-jian-bo-ke/"/>
     <updated>2015-09-16T16:51:14+08:00</updated>
-    <id>http://iknow0612.github.io/blog/2015/09/16/octopresschuang-jian-bo-ke</id>
+    <id>http://outporg.github.io/blog/2015/09/16/octopresschuang-jian-bo-ke</id>
     <content type="html"><![CDATA[<p>官方文档提供 Octopress 创建博客的基本步骤：<br/>
 <a href="http://octopress.org/docs/">http://octopress.org/docs/</a></p>
 
