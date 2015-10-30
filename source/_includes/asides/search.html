@@ -1,0 +1,13 @@
+{% if site.simple_search %}
+<div class="widget">
+    <form action="{{ site.simple_search }}" method="get">
+        <div class="input-group">
+            <input type="hidden" name="sitesearch" value="{{ site.url | shorthand_url }}">
+            <input class="form-control search" type="text" name="q" results="0" placeholder="Search..."/>
+            <span class="input-group-btn">
+                <button class="btn btn-default btn-lg" type="submit"><i class="fa fa-search"></i></button>
+            </span>
+        </div>
+    </form>
+</div>
+{% endif %}
