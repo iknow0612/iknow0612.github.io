@@ -20,7 +20,7 @@ categories: [octopress, 技术]
   
 使用 Chrome 浏览器的 “Inspect Element”－“Network” 可以很方便的查看到被墙掉的文件：
 
-![](/images/post/20150916/chrome_network_failed.png)
+{% img img-responsive /images/post/20150916/chrome_network_failed.png %}
 
 可以看出来，被墙文件的共同特点是路径名中都包含 googleapis.com, 很显然 googleapis.com 已经被墙掉，内网无法访问。现在要做的就是把这些墙掉的文件替换掉。回到 octopress 目录，使用如下命令查找文档中包含 "googleapis.com" 的文件：
 

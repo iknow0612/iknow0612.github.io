@@ -6,42 +6,44 @@ single: true
 <div class="jumbotron" style ='background-color: #000;height: 200px;'>
 </div>
 <div class="container">
-<div>
-<article class="hentry" role="article">
-  {% include article.html %}
-  <footer>
-    <p class="meta">
-      {% include post/author.html %}
-      {% include post/date.html %}{{ time }}{% if updated %} {{ updated }}{% endif %}
-      {% include post/categories.html %}
-    </p>
-    {% unless page.sharing == false %}
-      {% include post/sharing.html %}
-    {% endunless %}
-    <p class="meta">
-      {% if page.previous.url %}
-        <a class="basic-alignment left" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a>
-      {% endif %}
-      {% if page.next.url %}
-        <a class="basic-alignment right" href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &raquo;</a>
-      {% endif %}
-    </p>
-  </footer>
-</article>
-{% if site.disqus_short_name and page.comments == true %}
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
-  </section>
-{% endif %}
-</div>
-{% unless page.sidebar == false %}
-<aside class="sidebar">
-  {% if site.post_asides.size %}
-    {% include_array post_asides %}
-  {% else %}
-    {% include_array default_asides %}
-  {% endif %}
-</aside>
-{% endunless %}
+    <div class="row">
+        <div class="col-md-8">
+            <article class="hentry" role="article">
+              {% include article.html %}
+              <footer>
+                <p class="meta">
+                  {% include post/author.html %}
+                  {% include post/date.html %}{{ time }}{% if updated %} {{ updated }}{% endif %}
+                  {% include post/categories.html %}
+                </p>
+                {% unless page.sharing == false %}
+                  {% include post/sharing.html %}
+                {% endunless %}
+                <div class="row">
+                    <div class="col-md-12">
+                        {% if page.previous.url %}
+                            <div class="pull-left">
+                                <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a>
+                            </div>
+                        {% endif %}
+                        {% if page.next.url %}
+                            <div class="pull-right">
+                                <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &raquo;</a>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+              </footer>
+            </article>
+            {% if site.disqus_short_name and page.comments == true %}
+              <section>
+                <h1>评论</h1>
+                <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+              </section>
+            {% endif %}
+        </div>
+        <div class="col-md-4">
+            {% include side.html %}
+        </div>
+    </div>
 </div>
