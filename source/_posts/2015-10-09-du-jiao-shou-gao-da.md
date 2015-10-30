@@ -12,17 +12,17 @@ categories: [高达,生活]
 
 全装独角兽，顾名思义就是包含所有装备的独角兽高达。我组的这套是 MG 级别的独角兽，机体分为两种模式，一种独角兽模式（纯白），一种高达模式（露出绿色的精神感应框架，又称为爆甲）。组装完成后机体可以任意变换两种模式。
 
-![](/images/post/20151009/u-2.jpg)
+{% img img-responsive /images/post/20151009/u-2.jpg %}
 
 左边为独角兽模式，右边为爆甲模式。下面再上几张图：
 
 <!--more-->
 
-![](/images/post/20151009/u-0.jpg)
+{% img img-responsive /images/post/20151009/u-0.jpg %}
 
-![](/images/post/20151009/u-1.jpg)
+{% img img-responsive /images/post/20151009/u-1.jpg %}
 
-![](/images/post/20151009/u-3.jpg)
+{% img img-responsive /images/post/20151009/u-3.jpg %}
 
 ### 高达模型的一些基本词汇：  
 * 素组：只对模型进行拼装，不对模型进行贴纸、上色和喷涂

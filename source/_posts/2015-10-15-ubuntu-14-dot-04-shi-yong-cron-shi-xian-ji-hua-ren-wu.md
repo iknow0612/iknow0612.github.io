@@ -7,7 +7,7 @@ categories: ["技术","linux","cron"]
 ---
 
 
-![](/images/post/20151015/Timing.jpg)
+{% img img-responsive /images/post/20151015/Timing.jpg %}
 
 Windows 自带定时执行任务的工具叫做“计划任务”，Linux 下我们使用 Cron 实现这一功能。
 

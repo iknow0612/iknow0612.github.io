@@ -1,0 +1,37 @@
+{% include home.html %}
+
+<section class="blog" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title st-center">
+                    <h3>Blog</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                {% assign index = true %}
+                {% for post in paginator.posts %}
+                {% assign content = post.content %}
+                <div class="blog-post">
+                  {% include article.html %}
+                </div>
+                {% endfor %}
+                <div class="row">
+                    <div class="col-md-12">
+                        {% if paginator.next_page %}
+                            <div class="pull-left"><a class="prev" href="{{paginator.next_page_path}}#blog">&larr; 上一页</a></div>
+                        {% endif %}
+                        {% if paginator.previous_page %}
+                            <div class="pull-right"><a class="next" href="{{paginator.previous_page_path}}#blog">下一页 &rarr;</a></div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                {% include asides/recent_posts.html %}
+            </div>
+        </div>
+    </div>
+</section>
