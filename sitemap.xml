@@ -1,87 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://outporg.github.io/blog/2015/10/30/guan-yu-qi-che/</loc>
+    <loc>http://outprog.github.io/blog/2015/10/30/guan-yu-qi-che/</loc>
     <lastmod>2015-10-30T21:50:38+08:00</lastmod>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/2015/10/17/jie-jue-mac-os-x-shang-shi-yong-ssh-chu-xian-perl-warning-setting-local-failed-de-wen-ti/</loc>
+    <loc>http://outprog.github.io/blog/2015/10/17/jie-jue-mac-os-x-shang-shi-yong-ssh-chu-xian-perl-warning-setting-local-failed-de-wen-ti/</loc>
     <lastmod>2015-10-17T12:01:56+08:00</lastmod>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu/</loc>
+    <loc>http://outprog.github.io/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu/</loc>
     <lastmod>2015-10-15T21:37:47+08:00</lastmod>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/2015/10/13/mac-keyboard-shortcuts/</loc>
+    <loc>http://outprog.github.io/blog/2015/10/13/mac-keyboard-shortcuts/</loc>
     <lastmod>2015-10-13T22:49:53+08:00</lastmod>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/2015/10/09/du-jiao-shou-gao-da/</loc>
+    <loc>http://outprog.github.io/blog/2015/10/09/du-jiao-shou-gao-da/</loc>
     <lastmod>2015-10-09T00:05:40+08:00</lastmod>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/2015/09/29/guan-yu-xie-dai-ma/</loc>
+    <loc>http://outprog.github.io/blog/2015/09/29/guan-yu-xie-dai-ma/</loc>
     <lastmod>2015-09-29T17:15:06+08:00</lastmod>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/</loc>
+    <loc>http://outprog.github.io/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/</loc>
     <lastmod>2015-09-17T23:58:48+08:00</lastmod>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/2015/09/16/octopresschuang-jian-bo-ke/</loc>
+    <loc>http://outprog.github.io/blog/2015/09/16/octopresschuang-jian-bo-ke/</loc>
     <lastmod>2015-09-16T16:51:14+08:00</lastmod>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/2015/09/16/kai-qi-xin-de-pian-zhang/</loc>
+    <loc>http://outprog.github.io/blog/2015/09/16/kai-qi-xin-de-pian-zhang/</loc>
     <lastmod>2015-09-16T09:44:21+08:00</lastmod>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/archives/</loc>
+    <loc>http://outprog.github.io/blog/archives/</loc>
   </url>
   <url>
-    <loc>http://outporg.github.io/</loc>
+    <loc>http://outprog.github.io/</loc>
   </url>
   <url>
-    <loc>http://outporg.github.io/about/</loc>
+    <loc>http://outprog.github.io/about/</loc>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/categories/octopress/</loc>
+    <loc>http://outprog.github.io/blog/categories/octopress/</loc>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/categories/ji-zhu/</loc>
+    <loc>http://outprog.github.io/blog/categories/ji-zhu/</loc>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/categories/tu-shu/</loc>
+    <loc>http://outprog.github.io/blog/categories/tu-shu/</loc>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/categories/li-lun/</loc>
+    <loc>http://outprog.github.io/blog/categories/li-lun/</loc>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/categories/gao-da/</loc>
+    <loc>http://outprog.github.io/blog/categories/gao-da/</loc>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/categories/sheng-huo/</loc>
+    <loc>http://outprog.github.io/blog/categories/sheng-huo/</loc>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/categories/mac/</loc>
+    <loc>http://outprog.github.io/blog/categories/mac/</loc>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/categories/linux/</loc>
+    <loc>http://outprog.github.io/blog/categories/linux/</loc>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/categories/cron/</loc>
+    <loc>http://outprog.github.io/blog/categories/cron/</loc>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/categories/ssh/</loc>
+    <loc>http://outprog.github.io/blog/categories/ssh/</loc>
   </url>
   <url>
-    <loc>http://outporg.github.io/blog/categories/dan-che/</loc>
-  </url>
-  <url>
-    <loc>http://outporg.github.io/posts/2/</loc>
-  </url>
-  <url>
-    <loc>http://outporg.github.io/posts/3/</loc>
+    <loc>http://outprog.github.io/blog/categories/dan-che/</loc>
   </url>
 </urlset>
