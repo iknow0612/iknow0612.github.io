@@ -3,11 +3,11 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Category: 图书 - Outprog Blog</title>
+  <title>浏览器的 New Date('yyyy.mm.dd') 坑 - Outprog Blog</title>
   <meta name="author" content="Xiongwei">
 
   
-  <meta name="description" content="Category: 图书">
+  <meta name="description" content="2015年-11月-10日 12:32 am | Comments 浏览器的 New Date('yyyy.mm.dd') 坑 这个坑让我填了半个多小时。发个博文做纪念! new Date('yyyy.mm.dd') 以上这段看起来简单的代码，Chrome(Version 45.0.2454. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://outprog.github.io/blog/categories/tu-shu/">
+  <link rel="canonical" href="http://outprog.github.io/blog/2015/11/10/liu-lan-qi-de-new-date-yyyy-dot-mm-dot-dd-keng/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,400italic,600,300italic,300|Oswald:400,300,700' rel='stylesheet' type='text/css'>
 <!-- Bootstrap -->
@@ -68,36 +68,96 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8">
-            <article role="article">
+            <article class="hentry" role="article">
               
-              <header>
-                <h1 class="entry-title">Category: 图书</h1>
-                
-              </header>
-              
-              <div id="blog-archives" class="category">
+    <div class="post-meta">
+        <span>
+            
 
 
 
-  
-  <h3>2015</h3>
 
-<article>
-  
-<h3><a href="/blog/2015/09/17/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji--di-yi-bu-fen-zong-jie/">《计算的本质:深入剖析程序和计算机》第一部分总结</a></h3>
-<time datetime="2015-09-17T23:58:48+08:00" pubdate><span class='month'>Sep</span> <span class='day'>17</span> <span class='year'>2015</span></time>
+<time class='entry-date' datetime='2015-11-10T00:32:16+08:00'><span class='date'>2015年-11月-10日</span> <span class='time'>12:32 am</span></time>
+        </span>
+        
+            <span>
+               | <a href="#disqus_thread"
+                 data-disqus-identifier="http://outprog.github.io">Comments</a>
+            </span>
+        
+    </div>
+    
+        <h1 class="post-title">浏览器的 New Date('yyyy.mm.dd') 坑</h1>
+    
+    
+    
 
-<footer>
-  <span class="categories">发表于 <a class='category' href='/blog/categories/tu-shu/'>图书</a>, <a class='category' href='/blog/categories/ji-zhu/'>技术</a>, <a class='category' href='/blog/categories/li-lun/'>理论</a></span>
-</footer>
 
+    <div class="post-content"><p>这个坑让我填了半个多小时。发个博文做纪念!</p>
 
-</article>
+<pre><code>new Date('yyyy.mm.dd')
+</code></pre>
 
+<p>以上这段看起来简单的代码，Chrome(Version 45.0.2454.93 (64-bit)) 可以完美运行，但是 Safari(Version 9.0.1 (11601.2.7.2)) 下运行却会返回无效日期(Invalid Date)。</p>
+
+<p>为了保证兼容性，应该是用如下代码：</p>
+
+<pre><code>new Date('yyyy-mm-dd')
+</code></pre>
+
+<p>ps: 不同浏览器引擎对 js 的实现都存在细微的差别，一定要小心这些陷阱。写代码要注意兼容性。</p>
 </div>
 
-              
+
+              <footer>
+                <p class="meta">
+                  
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Xiongwei</span></span>
+
+                  
+
+
+
+
+<time class='entry-date' datetime='2015-11-10T00:32:16+08:00'><span class='date'>2015年-11月-10日</span> <span class='time'>12:32 am</span></time>
+                  
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/javascript/'>javascript</a>, <a class='category' href='/blog/categories/ji-zhu/'>技术</a>
+  
+</span>
+
+
+                </p>
+                
+                  <div class="sharing">
+  
+  
+  
+</div>
+
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                            <div class="pull-left">
+                                <a href="/blog/2015/10/30/guan-yu-qi-che/" title="Previous Post: 关于骑车">&laquo; 关于骑车</a>
+                            </div>
+                        
+                        
+                    </div>
+                </div>
+              </footer>
             </article>
+            
+              <section>
+                <h1>评论</h1>
+                <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              </section>
             
         </div>
         <div class="col-md-4">
@@ -205,7 +265,10 @@
       var disqus_shortname = 'outprog';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://outprog.github.io/blog/2015/11/10/liu-lan-qi-de-new-date-yyyy-dot-mm-dot-dd-keng/';
+        var disqus_url = 'http://outprog.github.io/blog/2015/11/10/liu-lan-qi-de-new-date-yyyy-dot-mm-dot-dd-keng/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

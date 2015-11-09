@@ -7,7 +7,7 @@
   <meta name="author" content="Xiongwei">
 
   
-  <meta name="description" content="开启新的篇章 Outprog Blog 更多 Blog 2015年-10月-30日 9:50 pm | Comments 关于骑车 高中的时候完成的第一次长途骑行，是一次没有任何准备没有任何计划的意外之旅。两个人，一辆普通山地车、一辆可以变速的儿童自行，没有装备、没有备胎、没有地图，骑行60公里 &hellip;">
+  <meta name="description" content="开启新的篇章 Outprog Blog 更多 Blog 2015年-11月-10日 12:32 am | Comments 浏览器的 New Date('yyyy.mm.dd') 坑 这个坑让我填了半个多小时。发个博文做纪念! new Date('yyyy.mm.dd') &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -108,6 +108,52 @@
 
 
 
+<time class='entry-date' datetime='2015-11-10T00:32:16+08:00'><span class='date'>2015年-11月-10日</span> <span class='time'>12:32 am</span></time>
+        </span>
+        
+            <span>
+               | <a href="/blog/2015/11/10/liu-lan-qi-de-new-date-yyyy-dot-mm-dot-dd-keng/#disqus_thread"
+                 data-disqus-identifier="http://outprog.github.io/blog/2015/11/10/liu-lan-qi-de-new-date-yyyy-dot-mm-dot-dd-keng/">Comments</a>
+            </span>
+        
+    </div>
+    
+        <h1 class="post-title"><a href="/blog/2015/11/10/liu-lan-qi-de-new-date-yyyy-dot-mm-dot-dd-keng/">浏览器的 New Date('yyyy.mm.dd') 坑</a></h1>
+    
+    
+    
+
+
+    <div class="post-content"><p>这个坑让我填了半个多小时。发个博文做纪念!</p>
+
+<pre><code>new Date('yyyy.mm.dd')
+</code></pre>
+
+<p>以上这段看起来简单的代码，Chrome(Version 45.0.2454.93 (64-bit)) 可以完美运行，但是 Safari(Version 9.0.1 (11601.2.7.2)) 下运行却会返回无效日期(Invalid Date)。</p>
+
+<p>为了保证兼容性，应该是用如下代码：</p>
+
+<pre><code>new Date('yyyy-mm-dd')
+</code></pre>
+
+<p>ps: 不同浏览器引擎对 js 的实现都存在细微的差别，一定要小心这些陷阱。写代码要注意兼容性。</p>
+</div>
+    
+    
+
+
+                </div>
+                
+                
+                <div class="blog-post">
+                  
+    <div class="post-meta">
+        <span>
+            
+
+
+
+
 <time class='entry-date' datetime='2015-10-30T21:50:38+08:00'><span class='date'>2015年-10月-30日</span> <span class='time'>9:50 pm</span></time>
         </span>
         
@@ -195,47 +241,6 @@ perl: warning: Falling back to the standard locale ("C").
 
                 </div>
                 
-                
-                <div class="blog-post">
-                  
-    <div class="post-meta">
-        <span>
-            
-
-
-
-
-<time class='entry-date' datetime='2015-10-15T21:37:47+08:00'><span class='date'>2015年-10月-15日</span> <span class='time'>9:37 pm</span></time>
-        </span>
-        
-            <span>
-               | <a href="/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu/#disqus_thread"
-                 data-disqus-identifier="http://outprog.github.io/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu/">Comments</a>
-            </span>
-        
-    </div>
-    
-        <h1 class="post-title"><a href="/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu/">Ubuntu 14.04 使用 Cron 实现计划任务</a></h1>
-    
-    
-    
-
-
-    <div class="post-content"><p><img class="img-responsive" src="/images/post/20151015/Timing.jpg"></p>
-
-<p>Windows 自带定时执行任务的工具叫做“计划任务”，Linux 下我们使用 Cron 实现这一功能。</p>
-
-</div>
-    
-    
-        <footer>
-            <a rel="full-article" href="/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu/">阅读全文 &rarr;</a>
-        </footer>
-    
-
-
-                </div>
-                
                 <div class="row">
                     <div class="col-md-12">
                         
@@ -265,13 +270,14 @@ perl: warning: Falling back to the standard locale ("C").
     <h2 class="widget-title">分类</h2>
     <ul>
         <li><a href='/blog/categories/cron/'>cron <span class='badge pull-right'>1)</span></a></li>
+<li><a href='/blog/categories/javascript/'>javascript <span class='badge pull-right'>1)</span></a></li>
 <li><a href='/blog/categories/linux/'>linux <span class='badge pull-right'>1)</span></a></li>
 <li><a href='/blog/categories/mac/'>mac <span class='badge pull-right'>2)</span></a></li>
 <li><a href='/blog/categories/octopress/'>octopress <span class='badge pull-right'>1)</span></a></li>
 <li><a href='/blog/categories/ssh/'>ssh <span class='badge pull-right'>1)</span></a></li>
 <li><a href='/blog/categories/dan-che/'>单车 <span class='badge pull-right'>1)</span></a></li>
 <li><a href='/blog/categories/tu-shu/'>图书 <span class='badge pull-right'>1)</span></a></li>
-<li><a href='/blog/categories/ji-zhu/'>技术 <span class='badge pull-right'>6)</span></a></li>
+<li><a href='/blog/categories/ji-zhu/'>技术 <span class='badge pull-right'>7)</span></a></li>
 <li><a href='/blog/categories/li-lun/'>理论 <span class='badge pull-right'>1)</span></a></li>
 <li><a href='/blog/categories/sheng-huo/'>生活 <span class='badge pull-right'>2)</span></a></li>
 <li><a href='/blog/categories/gao-da/'>高达 <span class='badge pull-right'>1)</span></a></li>
@@ -282,6 +288,14 @@ perl: warning: Falling back to the standard locale ("C").
     <div class="widget">
     <h2 class="widget-title">最近发表<h2>
     <ul>
+        
+            <li>
+                <div class="recent-post clearfix">
+                    <h2 class="post-title">
+                        <a href="/blog/2015/11/10/liu-lan-qi-de-new-date-yyyy-dot-mm-dot-dd-keng/">浏览器的 New Date('yyyy.mm.dd') 坑</a>
+                    </h2>
+                </div>
+            </li>
         
             <li>
                 <div class="recent-post clearfix">
@@ -311,14 +325,6 @@ perl: warning: Falling back to the standard locale ("C").
                 <div class="recent-post clearfix">
                     <h2 class="post-title">
                         <a href="/blog/2015/10/13/mac-keyboard-shortcuts/">Mac 快捷键</a>
-                    </h2>
-                </div>
-            </li>
-        
-            <li>
-                <div class="recent-post clearfix">
-                    <h2 class="post-title">
-                        <a href="/blog/2015/10/09/du-jiao-shou-gao-da/">全装独角兽高达</a>
                     </h2>
                 </div>
             </li>
