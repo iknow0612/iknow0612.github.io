@@ -4,7 +4,7 @@
   <title><![CDATA[Outprog Blog]]></title>
   <link href="http://outprog.github.io/atom.xml" rel="self"/>
   <link href="http://outprog.github.io/"/>
-  <updated>2015-11-10T00:41:31+08:00</updated>
+  <updated>2015-11-12T21:40:39+08:00</updated>
   <id>http://outprog.github.io/</id>
   <author>
     <name><![CDATA[Xiongwei]]></name>
@@ -23,9 +23,9 @@
 <pre><code>new Date('yyyy.mm.dd')
 </code></pre>
 
-<p>以上这段看起来简单的代码，Chrome(Version 45.0.2454.93 (64-bit)) 可以完美运行，但是 Safari(Version 9.0.1 (11601.2.7.2)) 下运行却会返回无效日期(Invalid Date)。</p>
+<p>以上这段简单的代码，在 Chrome 下可以完美运行，在 Safari 下运行却会返回无效日期(Invalid Date)。</p>
 
-<p>为了保证兼容性，应该是用如下代码：</p>
+<p>为了保证兼容性，应该使用如下代码：</p>
 
 <pre><code>new Date('yyyy-mm-dd')
 </code></pre>
