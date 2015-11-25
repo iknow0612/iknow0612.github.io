@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Mac | Outprog Blog]]></title>
-  <link href="http://iknow0612.github.io/blog/categories/mac/atom.xml" rel="self"/>
-  <link href="http://iknow0612.github.io/"/>
-  <updated>2015-10-17T12:24:04+08:00</updated>
-  <id>http://iknow0612.github.io/</id>
+  <link href="http://outprog.github.io/blog/categories/mac/atom.xml" rel="self"/>
+  <link href="http://outprog.github.io/"/>
+  <updated>2015-11-25T16:48:53+08:00</updated>
+  <id>http://outprog.github.io/</id>
   <author>
     <name><![CDATA[Xiongwei]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[解决 Mac OS X 上使用 SSH 出现 Perl Warning: Setting Local Failed 的问题]]></title>
-    <link href="http://iknow0612.github.io/blog/2015/10/17/jie-jue-mac-os-x-shang-shi-yong-ssh-chu-xian-perl-warning-setting-local-failed-de-wen-ti/"/>
+    <link href="http://outprog.github.io/blog/2015/10/17/jie-jue-mac-os-x-shang-shi-yong-ssh-chu-xian-perl-warning-setting-local-failed-de-wen-ti/"/>
     <updated>2015-10-17T12:01:56+08:00</updated>
-    <id>http://iknow0612.github.io/blog/2015/10/17/jie-jue-mac-os-x-shang-shi-yong-ssh-chu-xian-perl-warning-setting-local-failed-de-wen-ti</id>
+    <id>http://outprog.github.io/blog/2015/10/17/jie-jue-mac-os-x-shang-shi-yong-ssh-chu-xian-perl-warning-setting-local-failed-de-wen-ti</id>
     <content type="html"><![CDATA[<p>在 Mac 上使用 SSH 连接远程服务器，运行 mongo 会出现报错：</p>
 
 <pre><code>Failed global initialization: BadValue Invalid or no user locale set. Please ensure LANG and/or LC_* environment variables are set correctly.
@@ -50,9 +50,9 @@ export LC_ALL=en_US.UTF-8
   
   <entry>
     <title type="html"><![CDATA[Mac 快捷键]]></title>
-    <link href="http://iknow0612.github.io/blog/2015/10/13/mac-keyboard-shortcuts/"/>
+    <link href="http://outprog.github.io/blog/2015/10/13/mac-keyboard-shortcuts/"/>
     <updated>2015-10-13T22:49:53+08:00</updated>
-    <id>http://iknow0612.github.io/blog/2015/10/13/mac-keyboard-shortcuts</id>
+    <id>http://outprog.github.io/blog/2015/10/13/mac-keyboard-shortcuts</id>
     <content type="html"><![CDATA[<h4>您可以按组合键来执行通常需要鼠标、触控板或其他输入设备才能完成的操作。</h4>
 
 <p>要使用键盘快捷键，请按住一个或多个修饰键，同时按快捷键的最后一个键。例如，要使用快捷键 Command-C（拷贝），请按住 Command 键并按 C 键，然后同时松开这两个键。Mac 菜单和键盘通常使用某些按键的符号，其中包括以下修饰键：</p>

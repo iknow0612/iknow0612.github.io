@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: 生活 | Outprog Blog]]></title>
-  <link href="http://iknow0612.github.io/blog/categories/sheng-huo/atom.xml" rel="self"/>
-  <link href="http://iknow0612.github.io/"/>
-  <updated>2015-10-17T12:24:04+08:00</updated>
-  <id>http://iknow0612.github.io/</id>
+  <link href="http://outprog.github.io/blog/categories/sheng-huo/atom.xml" rel="self"/>
+  <link href="http://outprog.github.io/"/>
+  <updated>2015-11-25T16:48:53+08:00</updated>
+  <id>http://outprog.github.io/</id>
   <author>
     <name><![CDATA[Xiongwei]]></name>
     
@@ -14,28 +14,58 @@
 
   
   <entry>
+    <title type="html"><![CDATA[关于骑车]]></title>
+    <link href="http://outprog.github.io/blog/2015/10/30/guan-yu-qi-che/"/>
+    <updated>2015-10-30T21:50:38+08:00</updated>
+    <id>http://outprog.github.io/blog/2015/10/30/guan-yu-qi-che</id>
+    <content type="html"><![CDATA[<p><img class="img-responsive" src="/images/post/20151030/myroadbike.jpg"></p>
+
+<p>高中的时候完成的第一次长途骑行，是一次没有任何准备没有任何计划的意外之旅。两个人，一辆普通山地车、一辆可以变速的儿童自行，没有装备、没有备胎、没有地图，骑行60公里。</p>
+
+<p>大学几年很少骑车，直到快毕业的时候，收到朋友赠送的山地车才开始新的骑行之旅。</p>
+
+<!--more-->
+
+
+<p>工作后的第一个国庆节，从天津骑车至北戴河。出发后不久就下雨，泥土溅满了后背，下午抵达美丽干净的北塘，看着雨后放晴的彩虹大桥、吹着海风别有一番滋味。汉沽到乐亭县沿途很多的烂路堪比“滇藏公路”，马路皲裂出拳头宽的裂痕使得路途异常艰苦。沿途大片大片的鱼塘、麦田和谷田是唯一的风景。夜晚昌黎县到南戴河的乡间小道漆黑无比，海边的冷风仿佛吹到了骨子里，车把上也有一层薄薄的霜。真正抵达北戴河的时候，心里其是失落的，海边挤满了人群，景色变得不再重要，相比之下为了抵达北戴河这三天的艰苦路程才是真正的充满色彩。</p>
+
+<p>从那以后陆陆续续骑行了不少路线，车也从1千块钱的山地车升级到5千块的入门级山地。慢慢的认识各种套件，山地传动套件从入门到 XTR 级别，车架从铝合金到碳纤维，各种高端油压碟刹。后来见到朋友骑的 Cannondale（佳能戴尔）左撇子软尾山地车，瞬间就觉得帅爆了。左撇子山地车前叉只有一边，有一种缺失平衡的美感，然而操纵性和强度都不比一般的前叉差，如此有逼格的山地车，完全就是我的菜啊。左撇子山地车价格昂贵，朋友这款软尾标价接近4万5。</p>
+
+<p>这段时间对自行车几乎有些狂热了，凭着兴趣爱好，自己就开始在网上收集一些山地车的资料看看，发现左撇子山地车的中国官网资料都是英文，而且也没有标价，就琢磨自己做一个展示网站。那段时间正好在研究 nodejs，就用 express 框架搭建了 <a href="http://www.outprog.com:8090">CannondaleFun</a>。在朋友的帮助下爬取了官网的资料和图片，自己翻译了车辆的简单介绍，再搜集国内报价，简单 coding 后网站成功上线。</p>
+
+<p>一直觉得山地车结实耐艹，什么地形都可以去，是骑车的不二之选。慢慢通过和车友们的接触，在百度贴吧上看帖，开始对公路车感兴趣。玩车久了，才知道，山地车就该去山上完，去烂路上刺激，而城市道路还是铺设公路最好，终于踏上了公路车的不归途。。。</p>
+
+<p>记得第一次用公路车在路面上狂飙，道路两旁的景色飞速后退，路面的颠簸从把手传到掌心，原来双腿可以有这么大的潜力，内心真正的感到不可思议（蹬着不到 8 kg 的自行车，那时候真怕它散架啊）。这才发现在速度上公路和山地真的确实不是一个级别的。</p>
+
+<p>然而蹬上公路车和会骑公路车其实还相差甚远。今年五月禧玛诺车迷节参加了一次公路车比赛，匀速 30 第三圈就被迫退赛（因为被第一名超得太多）。看着运动员们近乎无限的体能，知道离自己的体能极限还远得很，看来这个运动还有太多值得“折tiao腾zhan”的地方。</p>
+
+<p>呵呵，骑车是一辈子的事情，慢慢来吧。还有很多山头没骑，还有很多美景没看，还有很多挑战没有完成！</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[全装独角兽高达]]></title>
-    <link href="http://iknow0612.github.io/blog/2015/10/09/du-jiao-shou-gao-da/"/>
+    <link href="http://outprog.github.io/blog/2015/10/09/du-jiao-shou-gao-da/"/>
     <updated>2015-10-09T00:05:40+08:00</updated>
-    <id>http://iknow0612.github.io/blog/2015/10/09/du-jiao-shou-gao-da</id>
+    <id>http://outprog.github.io/blog/2015/10/09/du-jiao-shou-gao-da</id>
     <content type="html"><![CDATA[<p>前段时间去日本旅行，买了两套高达模型</p>
 
 <p>今天终于完成了这套700多个零件的全装独角兽（只是素组）</p>
 
 <p>全装独角兽，顾名思义就是包含所有装备的独角兽高达。我组的这套是 MG 级别的独角兽，机体分为两种模式，一种独角兽模式（纯白），一种高达模式（露出绿色的精神感应框架，又称为爆甲）。组装完成后机体可以任意变换两种模式。</p>
 
-<p><img src="/images/post/20151009/u-2.jpg" alt="" /></p>
+<p><img class="img-responsive" src="/images/post/20151009/u-2.jpg"></p>
 
 <p>左边为独角兽模式，右边为爆甲模式。下面再上几张图：</p>
 
 <!--more-->
 
 
-<p><img src="/images/post/20151009/u-0.jpg" alt="" /></p>
+<p><img class="img-responsive" src="/images/post/20151009/u-0.jpg"></p>
 
-<p><img src="/images/post/20151009/u-1.jpg" alt="" /></p>
+<p><img class="img-responsive" src="/images/post/20151009/u-1.jpg"></p>
 
-<p><img src="/images/post/20151009/u-3.jpg" alt="" /></p>
+<p><img class="img-responsive" src="/images/post/20151009/u-3.jpg"></p>
 
 <h3>高达模型的一些基本词汇：</h3>
 

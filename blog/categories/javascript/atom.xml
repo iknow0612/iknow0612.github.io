@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Javascript | Outprog Blog]]></title>
+  <link href="http://outprog.github.io/blog/categories/javascript/atom.xml" rel="self"/>
+  <link href="http://outprog.github.io/"/>
+  <updated>2015-11-25T16:48:53+08:00</updated>
+  <id>http://outprog.github.io/</id>
+  <author>
+    <name><![CDATA[Xiongwei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[浏览器的 New Date('yyyy.mm.dd') 坑]]></title>
+    <link href="http://outprog.github.io/blog/2015/11/10/liu-lan-qi-de-new-date-yyyy-dot-mm-dot-dd-keng/"/>
+    <updated>2015-11-10T00:32:16+08:00</updated>
+    <id>http://outprog.github.io/blog/2015/11/10/liu-lan-qi-de-new-date-yyyy-dot-mm-dot-dd-keng</id>
+    <content type="html"><![CDATA[<p>这个坑让我填了半个多小时。发个博文做纪念!</p>
+
+<pre><code>new Date('yyyy.mm.dd')
+</code></pre>
+
+<p>以上这段简单的代码，在 Chrome 下可以完美运行，在 Safari 下运行却会返回无效日期(Invalid Date)。</p>
+
+<p>为了保证兼容性，应该使用如下代码：</p>
+
+<pre><code>new Date('yyyy-mm-dd')
+</code></pre>
+
+<p>ps: 不同浏览器引擎对 js 的实现都存在细微的差别，一定要小心这些陷阱。写代码要注意兼容性。</p>
+]]></content>
+  </entry>
+  
+</feed>

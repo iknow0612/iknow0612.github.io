@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Cron | Outprog Blog]]></title>
-  <link href="http://iknow0612.github.io/blog/categories/cron/atom.xml" rel="self"/>
-  <link href="http://iknow0612.github.io/"/>
-  <updated>2015-10-17T12:24:04+08:00</updated>
-  <id>http://iknow0612.github.io/</id>
+  <link href="http://outprog.github.io/blog/categories/cron/atom.xml" rel="self"/>
+  <link href="http://outprog.github.io/"/>
+  <updated>2015-11-25T16:48:53+08:00</updated>
+  <id>http://outprog.github.io/</id>
   <author>
     <name><![CDATA[Xiongwei]]></name>
     
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[Ubuntu 14.04 使用 Cron 实现计划任务]]></title>
-    <link href="http://iknow0612.github.io/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu/"/>
+    <link href="http://outprog.github.io/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu/"/>
     <updated>2015-10-15T21:37:47+08:00</updated>
-    <id>http://iknow0612.github.io/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu</id>
-    <content type="html"><![CDATA[<p><img src="/images/post/20151015/Timing.jpg" alt="" /></p>
+    <id>http://outprog.github.io/blog/2015/10/15/ubuntu-14-dot-04-shi-yong-cron-shi-xian-ji-hua-ren-wu</id>
+    <content type="html"><![CDATA[<p><img class="img-responsive" src="/images/post/20151015/Timing.jpg"></p>
 
 <p>Windows 自带定时执行任务的工具叫做“计划任务”，Linux 下我们使用 Cron 实现这一功能。</p>
 
