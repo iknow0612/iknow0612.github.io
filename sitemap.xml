@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+<<<<<<< HEAD
     <loc>http://outprog.github.io/blog/2015/11/27/wei-shi-yao-yao-chao-gu/</loc>
     <lastmod>2015-11-27T09:14:30+08:00</lastmod>
   </url>
   <url>
+=======
+>>>>>>> 0844edfdc34d46cebb7fcf7dbc484232ff29b752
     <loc>http://outprog.github.io/blog/2015/11/10/liu-lan-qi-de-new-date-yyyy-dot-mm-dot-dd-keng/</loc>
     <lastmod>2015-11-10T00:32:16+08:00</lastmod>
   </url>
@@ -52,6 +55,7 @@
   </url>
   <url>
     <loc>http://outprog.github.io/about/</loc>
+<<<<<<< HEAD
   </url>
   <url>
     <loc>http://outprog.github.io/blog/categories/octopress/</loc>
@@ -94,5 +98,43 @@
   </url>
   <url>
     <loc>http://outprog.github.io/blog/categories/shu-ju-fen-xi/</loc>
+=======
+  </url>
+  <url>
+    <loc>http://outprog.github.io/blog/categories/octopress/</loc>
+  </url>
+  <url>
+    <loc>http://outprog.github.io/blog/categories/ji-zhu/</loc>
+  </url>
+  <url>
+    <loc>http://outprog.github.io/blog/categories/tu-shu/</loc>
+  </url>
+  <url>
+    <loc>http://outprog.github.io/blog/categories/li-lun/</loc>
+  </url>
+  <url>
+    <loc>http://outprog.github.io/blog/categories/gao-da/</loc>
+  </url>
+  <url>
+    <loc>http://outprog.github.io/blog/categories/sheng-huo/</loc>
+  </url>
+  <url>
+    <loc>http://outprog.github.io/blog/categories/mac/</loc>
+  </url>
+  <url>
+    <loc>http://outprog.github.io/blog/categories/linux/</loc>
+  </url>
+  <url>
+    <loc>http://outprog.github.io/blog/categories/cron/</loc>
+  </url>
+  <url>
+    <loc>http://outprog.github.io/blog/categories/ssh/</loc>
+  </url>
+  <url>
+    <loc>http://outprog.github.io/blog/categories/dan-che/</loc>
+  </url>
+  <url>
+    <loc>http://outprog.github.io/blog/categories/javascript/</loc>
+>>>>>>> 0844edfdc34d46cebb7fcf7dbc484232ff29b752
   </url>
 </urlset>
