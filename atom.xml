@@ -4,11 +4,7 @@
   <title><![CDATA[Outprog Blog]]></title>
   <link href="http://outprog.github.io/atom.xml" rel="self"/>
   <link href="http://outprog.github.io/"/>
-<<<<<<< HEAD
   <updated>2015-11-27T17:39:05+08:00</updated>
-=======
-  <updated>2015-11-12T21:40:39+08:00</updated>
->>>>>>> 0844edfdc34d46cebb7fcf7dbc484232ff29b752
   <id>http://outprog.github.io/</id>
   <author>
     <name><![CDATA[Xiongwei]]></name>
@@ -18,7 +14,6 @@
 
   
   <entry>
-<<<<<<< HEAD
     <title type="html"><![CDATA[为什么要炒股]]></title>
     <link href="http://outprog.github.io/blog/2015/11/27/wei-shi-yao-yao-chao-gu/"/>
     <updated>2015-11-27T09:14:30+08:00</updated>
@@ -61,8 +56,6 @@
   </entry>
   
   <entry>
-=======
->>>>>>> 0844edfdc34d46cebb7fcf7dbc484232ff29b752
     <title type="html"><![CDATA[浏览器的 New Date('yyyy.mm.dd') 坑]]></title>
     <link href="http://outprog.github.io/blog/2015/11/10/liu-lan-qi-de-new-date-yyyy-dot-mm-dot-dd-keng/"/>
     <updated>2015-11-10T00:32:16+08:00</updated>
