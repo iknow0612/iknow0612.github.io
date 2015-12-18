@@ -3,7 +3,7 @@ layout: post
 title: "全装独角兽高达"
 date: 2015-10-09 00:05:40 +0800
 comments: true
-categories: [高达,生活]
+categories: [生活]
 ---
 
 前段时间去日本旅行，买了两套高达模型
