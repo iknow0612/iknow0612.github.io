@@ -7,7 +7,7 @@
   <meta name="author" content="Xiongwei">
 
   
-  <meta name="description" content="开启新的篇章 Outprog Blog 更多 Blog 2015年-12月-18日 8:57 pm | Comments 2015年度工作总结 本年度整体工作汇报如下： 年度工作项目汇总 天津分行微信公众平台（2015/3/7） 根据零售业务部需求定制开发分行微信公众平台。 &hellip;">
+  <meta name="description" content="开启新的篇章 Outprog Blog 更多 Blog 2016年-03月-02日 11:07 am | Comments 《计算的本质:深入剖析程序和计算机》后记总结 任何人都可以设计和实现一种编程语言。语法和语意的基本思想是简单的，Treetop这样的工具可以处理枯燥的细节。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -108,6 +108,48 @@
 
 
 
+<time class='entry-date' datetime='2016-03-02T11:07:17+08:00'><span class='date'>2016年-03月-02日</span> <span class='time'>11:07 am</span></time>
+        </span>
+        
+            <span>
+               | <a href="/blog/2016/03/02/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji-hou-ji-zong-jie/#disqus_thread"
+                 data-disqus-identifier="http://outprog.github.io/blog/2016/03/02/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji-hou-ji-zong-jie/">Comments</a>
+            </span>
+        
+    </div>
+    
+        <h1 class="post-title"><a href="/blog/2016/03/02/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji-hou-ji-zong-jie/">《计算的本质:深入剖析程序和计算机》后记总结</a></h1>
+    
+    
+    
+
+
+    <div class="post-content"><ul>
+<li>任何人都可以设计和实现一种编程语言。语法和语意的基本思想是简单的，Treetop这样的工具可以处理枯燥的细节。</li>
+<li>每一个计算机程序都是一个数学对象。按句法来说，一个程序只是一个大数；语义上来说，它可能代表一个数学函数，或者一个能被形式化规约规则操纵的分层结构。这意味着数学上的许多技术和成果，如 Kleene 规约理论或者 Godel 不完备定理，都能等价地应用到程序上。</li>
+<li>计算，最初被描述为只是“一台计算机做的事”，已经被证明是某种自然力量。很容易把计算想象为一个复杂的人类发明，它只能由对许多复杂部分进行特殊设计的系统来执行，但在系统中还可以看到支持它没那么复杂。因此，计算不是一个枯燥的只是发生在微处理器中的人工过程，而是一个在许多不同地点以不同方式发生的普遍现象。</li>
+<li>计算不是全有或全无的。不同的机器拥有不同的计算能力，这给了我们用途上的连续性：DFA 和 NFA 有有限的能力，DPDA 更强大，NPDA 还更强大，而图灵机是我们知道的最强大的机器。</li>
+<li>抽象的编码和级别对于利用计算能力必不可少。计算机是维护抽象宝塔的机器，从非常低层次的半导体物理学开始，上升到层次高得多的多点触控图形用户界面。为了让计算有用，我们需要能把现实世界中复杂的思想编码成机器能处理的简单的形式，然后再把结果解码回有意义的高层表示。</li>
+<li>计算能做的事情是有限的。我们不知道如何构建比图灵机能力更强的机器，但确实存在图灵机无法解决的问题，而这些问题包括我们所写程序的信息。可以利用模糊的或者不完整的答案处理这些限制，以便质疑我们程序的行为。</li>
+</ul>
+
+</div>
+    
+    
+
+
+                </div>
+                
+                
+                <div class="blog-post">
+                  
+    <div class="post-meta">
+        <span>
+            
+
+
+
+
 <time class='entry-date' datetime='2015-12-18T20:57:59+08:00'><span class='date'>2015年-12月-18日</span> <span class='time'>8:57 pm</span></time>
         </span>
         
@@ -189,52 +231,6 @@
 
                 </div>
                 
-                
-                <div class="blog-post">
-                  
-    <div class="post-meta">
-        <span>
-            
-
-
-
-
-<time class='entry-date' datetime='2015-11-10T00:32:16+08:00'><span class='date'>2015年-11月-10日</span> <span class='time'>12:32 am</span></time>
-        </span>
-        
-            <span>
-               | <a href="/blog/2015/11/10/liu-lan-qi-de-new-date-yyyy-dot-mm-dot-dd-keng/#disqus_thread"
-                 data-disqus-identifier="http://outprog.github.io/blog/2015/11/10/liu-lan-qi-de-new-date-yyyy-dot-mm-dot-dd-keng/">Comments</a>
-            </span>
-        
-    </div>
-    
-        <h1 class="post-title"><a href="/blog/2015/11/10/liu-lan-qi-de-new-date-yyyy-dot-mm-dot-dd-keng/">浏览器的 New Date('yyyy.mm.dd') 坑</a></h1>
-    
-    
-    
-
-
-    <div class="post-content"><p>这个坑让我填了半个多小时。发个博文做纪念!</p>
-
-<pre><code>new Date('yyyy.mm.dd')
-</code></pre>
-
-<p>以上这段简单的代码，在 Chrome 下可以完美运行，在 Safari 下运行却会返回无效日期(Invalid Date)。</p>
-
-<p>为了保证兼容性，应该使用如下代码：</p>
-
-<pre><code>new Date('yyyy-mm-dd')
-</code></pre>
-
-<p>ps: 不同浏览器引擎对 js 的实现都存在细微的差别，一定要小心这些陷阱。写代码要注意兼容性。</p>
-</div>
-    
-    
-
-
-                </div>
-                
                 <div class="row">
                     <div class="col-md-12">
                         
@@ -270,11 +266,11 @@
 <li><a href='/blog/categories/octopress/'>octopress <span class='badge pull-right'>1)</span></a></li>
 <li><a href='/blog/categories/ssh/'>ssh <span class='badge pull-right'>1)</span></a></li>
 <li><a href='/blog/categories/dan-che/'>单车 <span class='badge pull-right'>1)</span></a></li>
-<li><a href='/blog/categories/tu-shu/'>图书 <span class='badge pull-right'>1)</span></a></li>
-<li><a href='/blog/categories/zong-jie/'>总结 <span class='badge pull-right'>2)</span></a></li>
-<li><a href='/blog/categories/ji-zhu/'>技术 <span class='badge pull-right'>7)</span></a></li>
+<li><a href='/blog/categories/tu-shu/'>图书 <span class='badge pull-right'>2)</span></a></li>
+<li><a href='/blog/categories/zong-jie/'>总结 <span class='badge pull-right'>3)</span></a></li>
+<li><a href='/blog/categories/ji-zhu/'>技术 <span class='badge pull-right'>8)</span></a></li>
 <li><a href='/blog/categories/shu-ju-fen-xi/'>数据分析 <span class='badge pull-right'>1)</span></a></li>
-<li><a href='/blog/categories/li-lun/'>理论 <span class='badge pull-right'>1)</span></a></li>
+<li><a href='/blog/categories/li-lun/'>理论 <span class='badge pull-right'>2)</span></a></li>
 <li><a href='/blog/categories/sheng-huo/'>生活 <span class='badge pull-right'>2)</span></a></li>
 <li><a href='/blog/categories/gu-piao/'>股票 <span class='badge pull-right'>1)</span></a></li>
 
@@ -284,6 +280,14 @@
     <div class="widget">
     <h2 class="widget-title">最近发表<h2>
     <ul>
+        
+            <li>
+                <div class="recent-post clearfix">
+                    <h2 class="post-title">
+                        <a href="/blog/2016/03/02/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji-hou-ji-zong-jie/">《计算的本质:深入剖析程序和计算机》后记总结</a>
+                    </h2>
+                </div>
+            </li>
         
             <li>
                 <div class="recent-post clearfix">
@@ -313,14 +317,6 @@
                 <div class="recent-post clearfix">
                     <h2 class="post-title">
                         <a href="/blog/2015/10/30/guan-yu-qi-che/">关于骑车</a>
-                    </h2>
-                </div>
-            </li>
-        
-            <li>
-                <div class="recent-post clearfix">
-                    <h2 class="post-title">
-                        <a href="/blog/2015/10/17/jie-jue-mac-os-x-shang-shi-yong-ssh-chu-xian-perl-warning-setting-local-failed-de-wen-ti/">解决 Mac OS X 上使用 SSH 出现 Perl Warning: Setting Local Failed 的问题</a>
                     </h2>
                 </div>
             </li>

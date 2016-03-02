@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://outprog.github.io/blog/2016/03/02/ji-suan-de-ben-zhi-shen-ru-pou-xi-cheng-xu-he-ji-suan-ji-hou-ji-zong-jie/</loc>
+    <lastmod>2016-03-02T11:07:17+08:00</lastmod>
+  </url>
+  <url>
     <loc>http://outprog.github.io/blog/2015/12/18/2015nian-du-gong-zuo-zong-jie/</loc>
     <lastmod>2015-12-18T20:57:59+08:00</lastmod>
   </url>
@@ -98,5 +102,17 @@
   </url>
   <url>
     <loc>http://outprog.github.io/blog/categories/shu-ju-fen-xi/</loc>
+  </url>
+  <url>
+    <loc>http://outprog.github.io/posts/2/</loc>
+  </url>
+  <url>
+    <loc>http://outprog.github.io/posts/3/</loc>
+  </url>
+  <url>
+    <loc>http://outprog.github.io/posts/4/</loc>
+  </url>
+  <url>
+    <loc>http://outprog.github.io/posts/5/</loc>
   </url>
 </urlset>
