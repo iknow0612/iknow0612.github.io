@@ -7,7 +7,7 @@
   <meta name="author" content="Xiongwei">
 
   
-  <meta name="description" content="2015年-11月-10日 12:32 am | Comments 浏览器的 New Date('yyyy.mm.dd') 坑 这个坑让我填了半个多小时。发个博文做纪念! new Date('yyyy.mm.dd') 以上这段简单的代码，在 Chrome 下可以完美运行，在 Safari &hellip;">
+  <meta name="description" content="2015年-11月-10日 12:32 am 浏览器的 New Date('yyyy.mm.dd') 坑 这个坑让我填了半个多小时。发个博文做纪念! new Date('yyyy.mm.dd') 以上这段简单的代码，在 Chrome 下可以完美运行，在 Safari 下运行却会返回无效日期( &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,11 +79,6 @@
 
 <time class='entry-date' datetime='2015-11-10T00:32:16+08:00'><span class='date'>2015年-11月-10日</span> <span class='time'>12:32 am</span></time>
         </span>
-        
-            <span>
-               | <a href="#disqus_thread"
-                 data-disqus-identifier="http://outprog.github.io">Comments</a>
-            </span>
         
     </div>
     
@@ -158,9 +153,11 @@
             </article>
             
               <section>
+                <!--
                 <h1>评论</h1>
                 <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
+                -->
               </section>
             
         </div>
@@ -281,7 +278,7 @@
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
       dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      //(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
 

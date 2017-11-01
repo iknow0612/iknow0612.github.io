@@ -18,7 +18,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 p {
-  margin-bottom: 26px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 35px;
 }
 a {
   color: #4ecdc4;
@@ -29,7 +31,13 @@ a {
 a:hover {
   color: #4c4c4c;
 }
-h1,
+h1 {
+  font-family: "Oswald";
+  color: #4c4c4c;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
 h2,
 h3,
 h4,
